@@ -25,6 +25,7 @@
 }
 
 .portada-right video {
+  border-radius: 20px;
   display: block;
   margin: auto;
   height: 100%;
@@ -34,11 +35,13 @@
 
 @media (min-width: 600px) {
   .portada-left {
+    border-radius: 30px;
     max-width: 50vw;
     min-height: 520px;
     max-height: 520px;
   }
   .portada-right {
+    border-radius: 20px;
     max-width: 30vw;
   }
 }

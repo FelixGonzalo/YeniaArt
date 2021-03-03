@@ -16,3 +16,18 @@ code {
 :root {
   --cfondo: #f3f3f3;
 }
+
+@font-face {
+  font-family: "Mystical_Snow";
+  src: url("./font/Mystical_Snow.ttf");
+}
+
+@font-face {
+  font-family: "BALEHOME";
+  src: url("./font/BALEHOME.ttf");
+}
+
+@font-face {
+  font-family: "Letters_for_Learners";
+  src: url("./font/Letters_for_Learners.ttf");
+}
