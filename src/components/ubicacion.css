@@ -1,7 +1,9 @@
 .ubicacion {
   width: 90%;
-  height: 367px;
+  min-height: 367px;
   margin: auto;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .ubicacion img {
@@ -16,15 +18,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 0px 5px;
 }
 
 .ubicacion-info-nombre {
+  width: 45%;
+  margin: 0;
   font-weight: bold;
-  width: 380px;
 }
 
 .ubicacion-info-ciudad {
+  margin: 0;
   display: block;
 }
 
@@ -34,8 +40,15 @@
 }
 
 .ubicacion-info-text {
-  width: 200px;
+  width: 45%;
   text-align: right;
   font-size: 15px;
   color: #828282;
+}
+
+@media (min-width: 600px) {
+  .ubicacion {
+    max-width: 400px;
+    margin: 0px;
+  }
 }

@@ -1,0 +1,22 @@
+.ubicanos-titulo {
+  text-align: center;
+  font-size: 40px;
+  margin: 40px 0px 10px;
+  color: #62a773;
+}
+
+.ubicanos-text {
+  margin: 10px 10px 20px;
+  font-size: 25px;
+  text-align: center;
+  color: #313131;
+}
+
+@media (min-width: 600px) {
+  .ubicanos-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}

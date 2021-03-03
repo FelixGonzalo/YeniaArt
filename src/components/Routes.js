@@ -1,6 +1,8 @@
 import  {Fragment} from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Footer from './Footer'
 import Header from './Header'
+import Ofertas from './Ofertas'
 import Portada from './Portada'
 import Ubicanos from './Ubicanos'
 
@@ -17,9 +19,11 @@ const Routes = () => {
           <Route path="/">
             <Portada/>
             <Ubicanos/>
+            <Ofertas/>
           </Route>
         </Switch>
       </Router>
+      <Footer/>
     </Fragment>
   );
 }

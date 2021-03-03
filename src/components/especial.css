@@ -1,10 +1,15 @@
 .especial {
-  background: #c8d64e;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+  gap: 30px;
 }
 
 .especial-info {
   text-align: center;
-  margin: 30px 0px;
 }
 
 .especial-info-title {
@@ -39,4 +44,20 @@
   height: 250px;
   object-fit: cover;
   transform: rotate(2deg);
+}
+
+@media (min-width: 600px) {
+  .especial {
+    flex-direction: row;
+  }
+  .especial img {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .especial img {
+    max-width: 400px;
+    height: 400px;
+  }
 }

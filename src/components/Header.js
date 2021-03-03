@@ -5,10 +5,10 @@ import marca from '../img/marca.png'
 const Header = () => {
   return (
     <header className="header">
-      <NavLink to="/" exact className="header-option header-inicio" activeClassName="header-activate">
+      <div className="header-inicio">
         <img src={marca} alt="yeniaart" className="header-marca"/>
         <h1>YeniaArt</h1>
-      </NavLink>
+      </div>
       <div className="header-menu">
         <div className="header_menu_switch">
           <span>Menu</span>
