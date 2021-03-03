@@ -1,0 +1,41 @@
+.ubicacion {
+  width: 90%;
+  height: 367px;
+  margin: auto;
+}
+
+.ubicacion img {
+  width: 100%;
+  height: 276px;
+  object-fit: cover;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+
+.ubicacion-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+
+.ubicacion-info-nombre {
+  font-weight: bold;
+  width: 380px;
+}
+
+.ubicacion-info-ciudad {
+  display: block;
+}
+
+.ubicacion-info-referencia {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.ubicacion-info-text {
+  width: 200px;
+  text-align: right;
+  font-size: 15px;
+  color: #828282;
+}

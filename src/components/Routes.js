@@ -1,6 +1,9 @@
 import  {Fragment} from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Header from './Header'
+import Portada from './Portada'
+import Ubicanos from './Ubicanos'
+
 
 const Routes = () => {
   return (
@@ -12,7 +15,8 @@ const Routes = () => {
             Productos Personalizados
           </Route>
           <Route path="/">
-            Inicio
+            <Portada/>
+            <Ubicanos/>
           </Route>
         </Switch>
       </Router>

@@ -1,0 +1,32 @@
+.portada {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portada-left {
+  box-sizing: border-box;
+  height: 520px;
+  width: 100%;
+  padding: 30px;
+  /* width: 900px; */
+  background: #c8d64e;
+}
+
+.portada-right {
+  height: 520px;
+  /* width: 340px; */
+  width: 100%;
+  background: #5994a3;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.portada-right video {
+  display: block;
+  margin: auto;
+  height: 100%;
+  width: 90%;
+  object-fit: cover;
+}
