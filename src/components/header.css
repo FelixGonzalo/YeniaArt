@@ -1,72 +1,72 @@
-.header-option {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.header-activate {
-  color: #5994a3;
-}
-
-.header-inicio {
+.header {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  height: 10vh;
-  padding: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 10vh;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0px 20px;
+  gap: 10px;
+  margin: auto;
+  background: #700505;
+  border-bottom: 2px solid #ddc9c9;
+}
+
+.header-negocio {
+  display: flex;
+  align-items: center;
 }
 
 .header-marca {
-  height: 35px;
-  border-radius: 20px;
-  margin: 0px 10px;
+  box-sizing: border-box;
+  height: 45px;
+  border-radius: 5px;
+  border: 2px solid black;
 }
 
 .header h1 {
+  color: white;
   text-decoration: none;
   display: inline;
-  margin: 0;
+  margin-left: 20px;
+  margin-right: 30px;
   font-size: 35px;
   font-family: "Mystical_Snow", sans-serif;
-  font-weight: 500;
+  font-weight: 100;
 }
 
-.header_menu_switch {
-  position: fixed;
-  z-index: 5;
-  cursor: pointer;
-  user-select: none;
-  display: inline-block;
-}
-
-.header_menu_switch span {
-  background: #c1c1c1;
-  padding: 5px 10px;
-  border-radius: 0 7px 7px 0;
-  border: 1px solid black;
-}
-
-.header_menu_switch:hover .header-menu-opciones {
-  left: 0;
-  width: 80%;
-}
-
-.header-menu-opciones {
-  position: fixed;
-  background: #c1c1c1;
-  height: 80vh;
-  width: 0;
-  left: -100%;
-  text-align: right;
-  box-sizing: border-box;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transition: 1s;
-}
-
-.header-inicio img {
+.header-option {
   display: none;
+}
+
+@media (min-width: 600px) {
+  .header {
+    max-width: 1100px;
+    width: 70vw;
+    background: none;
+    border-bottom: none;
+  }
+  .header h1 {
+    color: black;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header-option {
+    display: block;
+    margin: 0px 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .header-option:hover {
+    text-decoration: overline;
+  }
+
+  .header-activate {
+    font-weight: bold;
+  }
 }

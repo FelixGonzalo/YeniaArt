@@ -1,0 +1,79 @@
+.menuFullScreen {
+  cursor: pointer;
+  user-select: none;
+}
+
+.menuFullScreen-abrir {
+  font-family: "Letters_for_Learners", sans-serif;
+  font-weight: bold;
+  background: #f2c94c;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 2px solid black;
+  display: block;
+  width: 50px;
+  text-align: center;
+}
+
+.menuFullScreen-abrir:hover {
+  border-style: dashed;
+}
+
+.menuFullScreen-opciones {
+  position: absolute;
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
+  top: -100vh;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: 1s;
+  z-index: 5;
+  background: linear-gradient(45deg, #bce0e9 95%, #3b7d8d 5%);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 100px 0px 0px;
+}
+
+.menuFullScreen-opciones-cerrar {
+  color: #3b7d8d;
+  margin-top: 40px;
+  font-family: "Letters_for_Learners", sans-serif;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 2px solid #3b7d8d;
+  color: #3b7d8d;
+  display: block;
+  width: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menuFullScreen-opciones-cerrar:hover {
+  background: #3b7d8d;
+  color: #bce0e9;
+}
+
+.menuFullScreen-option {
+  text-decoration: none;
+  color: #559bac;
+  font-size: 20px;
+}
+
+.menuFullScreen-option:hover {
+  color: #3b7d8d;
+}
+
+.menuFullScreen-activate {
+  color: #3b7d8d;
+  font-weight: bold;
+}
+
+.menu-abrir {
+  top: 0;
+}
