@@ -8,7 +8,7 @@ import img3 from '../img/ubicacion_fotofelixNvoChimbote.jpg'
 const Ofertas = () => {
   return (
     <div className="ofertas" id="ofertas">
-      <h2 className="Ofertas-titulo">Ofertas</h2>
+      <h2 className="Ofertas-titulo titulo">Ofertas</h2>
       <DisplayProducto
         titulo="Marco Pizarra"
         precioantes="s/45"

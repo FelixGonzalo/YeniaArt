@@ -6,7 +6,7 @@ import './ubicanos.css'
 const Ubicanos = () => {
   return (
     <div className="ubicanos">
-      <h2 className="ubicanos-titulo">Ubicanos</h2>
+      <h2 className="ubicanos-titulo titulo">Ubicanos</h2>
       <p className="ubicanos-text">Puedes encontrar nuestros productos en tiendas amigas</p>
       <div className="ubicanos-items">
         <Ubicacion 

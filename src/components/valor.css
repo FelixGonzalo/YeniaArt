@@ -1,0 +1,30 @@
+.valor {
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  border: 2px solid var(--cCeleste);
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Letters_for_Learners", sans-serif;
+}
+
+.valor img {
+  width: 100px;
+  height: 100px;
+}
+
+.valor-nombre {
+  font-weight: bold;
+  color: var(--cCeleste);
+}
+
+.valor-descripcion {
+  color: var(--cGris);
+}

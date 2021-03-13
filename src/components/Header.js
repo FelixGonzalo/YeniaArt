@@ -9,13 +9,13 @@ const Header = () => {
       <div className="header-negocio">
           <img src={marca} alt="yeniaart" className="header-marca"/>
           <h1>YeniaArt</h1>
-          <NavLink to="/" className="header-option" activeClassName="header-activate">
+          <NavLink to="/" exact className="header-option" activeClassName="header-activate">
             Inicio
           </NavLink>
-          <NavLink to="/quienessomos" className="header-option" activeClassName="header-activate"> 
+          <NavLink to="/quienessomos" exact className="header-option" activeClassName="header-activate"> 
             ¿Quiénes somos?
           </NavLink> 
-          <NavLink to="/queofrecemos" className="header-option" activeClassName="header-activate"> 
+          <NavLink to="/queofrecemos" exact className="header-option" activeClassName="header-activate"> 
             ¿Qué ofrecemos?  
           </NavLink> 
       </div> 

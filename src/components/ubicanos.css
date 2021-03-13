@@ -1,14 +1,10 @@
 .ubicanos-titulo {
-  text-align: center;
-  font-size: 40px;
-  margin: 40px 0px 10px;
   color: var(--cVerde);
-  font-family: "BALEHOME", sans-serif;
-  letter-spacing: 5px;
 }
 
 .ubicanos-text {
   margin: 10px 10px 30px;
+  padding: 5px;
   font-size: 25px;
   text-align: center;
   color: var(--cGris);

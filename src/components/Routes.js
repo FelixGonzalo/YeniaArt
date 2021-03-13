@@ -4,6 +4,7 @@ import Footer from './Footer'
 import Header from './Header'
 import Ofertas from './Ofertas'
 import Portada from './Portada'
+import QuienesSomos from './QuienesSomos'
 import Ubicanos from './Ubicanos'
 
 
@@ -17,7 +18,7 @@ const Routes = () => {
             qué ofrecemos
           </Route>
           <Route path="/quienessomos" exact>
-            quiénes somos?
+            <QuienesSomos/>
           </Route>
           <Route path="/" exact>
             <Portada/>

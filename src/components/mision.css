@@ -1,0 +1,25 @@
+.mision {
+  width: 100%;
+  max-width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.mision-nombre {
+  font-family: "Letters_for_Learners", sans-serif;
+  color: var(--cRojo);
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0;
+}
+
+.mision-descripcion {
+  font-family: "Letters_for_Learners", sans-serif;
+}
+
+.mision img {
+  margin-top: 20px;
+  width: 65px;
+  height: 65px;
+}

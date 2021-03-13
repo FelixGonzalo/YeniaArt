@@ -43,3 +43,19 @@ code {
   font-family: "Letters_for_Learners";
   src: url("./font/Letters_for_Learners.ttf");
 }
+
+.titulo {
+  text-align: center;
+  font-size: 40px;
+  margin: 50px 0px 20px;
+  font-family: "BALEHOME", sans-serif;
+  letter-spacing: 5px;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 35px;
+  margin: 50px 0px 20px;
+  font-family: "BALEHOME", sans-serif;
+  letter-spacing: 5px;
+}

@@ -1,0 +1,42 @@
+.quienessomos {
+  text-align: center;
+}
+
+.quienessomos h2 {
+  font-size: 35px;
+}
+
+.quienessomos-text {
+  margin: auto;
+  font-size: 25px;
+  font-family: "Letters_for_Learners", sans-serif;
+  width: 90%;
+  max-width: 500px;
+}
+
+.quienessomos-marca {
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.quienessomos-valores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.quienessomos-valores-titulo {
+  color: var(--cCeleste);
+}
+
+.quienessomos-misionvision {
+  margin: 40px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
