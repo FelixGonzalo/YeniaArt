@@ -3,8 +3,7 @@ import './ubicacion.css'
 const Ubicacion = (props) => {
   return (
     <div className="ubicacion">
-      <img src={props.foto} alt="ubicacion yeniaart"/>
-      <div className="ubicacion-info">
+     <div className="ubicacion-info">
         <p className="ubicacion-info-nombre">
           {props.nombre}
           <span className="ubicacion-info-ciudad">{props.ciudad}</span>
@@ -14,6 +13,8 @@ const Ubicacion = (props) => {
           {props.info}
         </p>
       </div>
+      <img src={props.foto} alt="ubicacion yeniaart" className="ubicacion-foto"/>
+      <iframe className="ubicacion-mapa" src={props.googlemap}  loading="lazy"></iframe>
     </div>
   );
 }

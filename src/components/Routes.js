@@ -13,10 +13,13 @@ const Routes = () => {
       <Router>
         <Header/>
         <Switch>
-          <Route path="/productos.personalizados">
-            Productos Personalizados
+          <Route path="/queofrecemos" exact>
+            qué ofrecemos
           </Route>
-          <Route path="/">
+          <Route path="/quienessomos" exact>
+            quiénes somos?
+          </Route>
+          <Route path="/" exact>
             <Portada/>
             <Ubicanos/>
             <Ofertas/>

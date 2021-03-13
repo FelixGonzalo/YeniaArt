@@ -29,10 +29,10 @@
 }
 
 .especial-vermas {
-  background: #bd0505;
+  background: var(--cRojo2);
   border-radius: 10px;
   text-decoration: none;
-  color: white;
+  color: var(--cfondo);
   width: 130px;
   height: 50px;
   display: inline-block;

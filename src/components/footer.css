@@ -1,17 +1,17 @@
 .footer {
   border-radius: 10px;
   box-sizing: border-box;
-  background: #bce0e9;
+  background: var(--cCeleste2);
   width: 100%;
   padding: 30px 20px 20px;
   margin: auto;
   margin-top: 40px;
-  color: #333333;
+  color: var(--cGris);
   user-select: none;
 }
 
 .footer a {
-  color: #242424;
+  color: var(--cGris);
   text-decoration: none;
 }
 

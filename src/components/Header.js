@@ -4,17 +4,19 @@ import MenuFullScreen from "./MenuFullScreen"
 import {NavLink} from "react-router-dom"
 
 const Header = () => {
-
   return (
     <header className="header">
       <div className="header-negocio">
           <img src={marca} alt="yeniaart" className="header-marca"/>
           <h1>YeniaArt</h1>
-          <NavLink to="/" exact className="header-option" activeClassName="header-activate">
-          Inicio
+          <NavLink to="/" className="header-option" activeClassName="header-activate">
+            Inicio
           </NavLink>
-          <NavLink to="/productos.personalizados" exact className="header-option" activeClassName="header-activate"> 
-            Productos Personalizados
+          <NavLink to="/quienessomos" className="header-option" activeClassName="header-activate"> 
+            ¿Quiénes somos?
+          </NavLink> 
+          <NavLink to="/queofrecemos" className="header-option" activeClassName="header-activate"> 
+            ¿Qué ofrecemos?  
           </NavLink> 
       </div> 
       <MenuFullScreen/>

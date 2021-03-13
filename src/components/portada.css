@@ -10,7 +10,7 @@
   min-height: 90vh;
   width: 100%;
   padding: 30px;
-  background: #c8d64e;
+  background: var(--cAmarillo2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@
   height: 520px;
   width: 100%;
   padding: 30px;
-  background: #5994a3;
+  background: var(--cCeleste);
 }
 
 .portada-right video {

@@ -15,6 +15,18 @@ code {
 
 :root {
   --cfondo: #e7e4e4;
+  --cheader: #700505;
+  --cCeleste: #5994a3;
+  --cCeleste2: #bce0e9;
+  --cCeleste3: #3b7d8d;
+  --cRojo: #b73e3e;
+  --cRojo2: #bd0505;
+  --cNegro: black;
+  --cGris: #242424;
+  --cGris2: #817f7f;
+  --cAmarillo: #f2c94c;
+  --cAmarillo2: #c8d64e;
+  --cVerde: #62a773;
 }
 
 @font-face {

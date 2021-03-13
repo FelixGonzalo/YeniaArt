@@ -17,7 +17,7 @@
   font-weight: bold;
   margin: 0;
   margin-bottom: 10px;
-  color: #5994a3;
+  color: var(--cCeleste);
 }
 
 .displayProducto-info-antes {
@@ -26,7 +26,7 @@
 }
 
 .displayProducto-info-antes span {
-  color: #b73e3e;
+  color: var(--cRojo);
   font-weight: bold;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .displayProducto-info-ahora span {
-  color: #b73e3e;
+  color: var(--cRojo);
   text-decoration: line-through;
 }
 
@@ -51,8 +51,8 @@
 
 .displayProducto-fotos img {
   border-radius: 10px;
-  background: #5994a3;
-  border: 4px solid #5994a3;
+  background: var(--cCeleste);
+  border: 4px solid var(--cCeleste);
   width: 300px;
   height: 200px;
   object-fit: cover;
@@ -110,7 +110,7 @@
     box-sizing: border-box;
     width: 50px;
     height: 40px;
-    border: 10px solid #5994a3;
+    border: 10px solid var(--cCeleste);
   }
   .displayProducto-menu img:hover {
     border: none;

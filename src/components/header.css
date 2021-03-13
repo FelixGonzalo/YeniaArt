@@ -8,29 +8,32 @@
   min-height: 10vh;
   width: 100%;
   max-width: 1100px;
-  padding: 0px 20px;
+  padding: 5px 20px;
   gap: 10px;
   margin: auto;
-  background: #700505;
-  border-bottom: 2px solid #ddc9c9;
+  background: var(--cheader);
+  border-bottom: 2px solid var(--cfondo);
 }
 
 .header-negocio {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .header-marca {
   box-sizing: border-box;
   height: 45px;
   border-radius: 5px;
-  border: 2px solid black;
+  border: 2px solid var(--cNegro);
 }
 
 .header h1 {
-  color: white;
+  color: var(--cfondo);
   text-decoration: none;
   display: inline;
+  margin: 0;
   margin-left: 20px;
   margin-right: 30px;
   font-size: 35px;
@@ -50,7 +53,7 @@
     border-bottom: none;
   }
   .header h1 {
-    color: black;
+    color: var(--cNegro);
   }
 }
 
@@ -59,7 +62,7 @@
     display: block;
     margin: 0px 10px;
     text-decoration: none;
-    color: black;
+    color: var(--cNegro);
   }
 
   .header-option:hover {

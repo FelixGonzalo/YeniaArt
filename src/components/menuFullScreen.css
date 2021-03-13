@@ -6,11 +6,11 @@
 .menuFullScreen-abrir {
   font-family: "Letters_for_Learners", sans-serif;
   font-weight: bold;
-  background: #f2c94c;
+  background: var(--cAmarillo);
   font-size: 20px;
   padding: 5px 10px;
   border-radius: 4px;
-  border: 2px solid black;
+  border: 2px solid var(--cNegro);
   display: block;
   width: 50px;
   text-align: center;
@@ -31,23 +31,23 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  transition: 1s;
+  transition: 0.4s;
   z-index: 5;
-  background: linear-gradient(45deg, #bce0e9 95%, #3b7d8d 5%);
+  background: linear-gradient(45deg, var(--cCeleste2) 95%, var(--cCeleste) 5%);
   text-align: center;
   box-sizing: border-box;
   padding: 100px 0px 0px;
 }
 
 .menuFullScreen-opciones-cerrar {
-  color: #3b7d8d;
+  color: var(--cCeleste);
   margin-top: 40px;
   font-family: "Letters_for_Learners", sans-serif;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 4px;
-  border: 2px solid #3b7d8d;
-  color: #3b7d8d;
+  border: 2px solid var(--cCeleste);
+  color: var(--cCeleste);
   display: block;
   width: 50px;
   text-align: center;
@@ -55,22 +55,22 @@
 }
 
 .menuFullScreen-opciones-cerrar:hover {
-  background: #3b7d8d;
-  color: #bce0e9;
+  background: var(--cCeleste);
+  color: var(--cCeleste2);
 }
 
 .menuFullScreen-option {
   text-decoration: none;
-  color: #559bac;
+  color: var(--cCeleste);
   font-size: 20px;
 }
 
 .menuFullScreen-option:hover {
-  color: #3b7d8d;
+  color: var(--cCeleste3);
 }
 
 .menuFullScreen-activate {
-  color: #3b7d8d;
+  color: var(--cCeleste3);
   font-weight: bold;
 }
 

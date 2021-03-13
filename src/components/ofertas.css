@@ -1,8 +1,8 @@
 .Ofertas-titulo {
   text-align: center;
   font-size: 40px;
-  margin: 20px 0px 20px;
-  color: #5994a3;
+  margin: 50px 0px 20px;
+  color: var(--cCeleste);
   font-family: "BALEHOME", sans-serif;
   letter-spacing: 5px;
 }
