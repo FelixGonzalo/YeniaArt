@@ -1,5 +1,5 @@
 .queofrecemos {
-  padding: 20px;
+  padding: 0 20px;
   font-size: 30px;
   margin: auto;
   max-width: 1300px;
@@ -13,6 +13,53 @@
 
 .queofrecemos-resumen-info {
   max-width: 500px;
+  position: relative;
+}
+
+.queofrecemos-resumen-info::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: var(--cAmarillo);
+  border-radius: 20px;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -5;
+  top: 60%;
+  left: 70%;
+}
+
+.queofrecemos-resumen-info::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: var(--cRojo);
+  border-radius: 20px;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -5;
+  top: 70%;
+  left: 60%;
+  animation: queofrecemosAdorno 6s infinite alternate;
+}
+
+@keyframes queofrecemosAdorno {
+  50% {
+    left: 55%;
+    height: 50px;
+  }
+  70% {
+    top: 80%;
+    z-index: -6;
+    border-radius: 40px;
+    width: 50px;
+  }
+  90% {
+    top: 60%;
+    left: 70%;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .queofrecemos-resumen-info ul li:first-child {
@@ -27,7 +74,7 @@
 .queofrecemos-productos-terminos {
   max-width: 800px;
   text-align: center;
-  margin: 30px auto;
+  margin: 50px auto 30px;
 }
 
 .queofrecemos-productos {

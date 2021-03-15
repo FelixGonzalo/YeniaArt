@@ -1,9 +1,19 @@
 import Carrusel3D from './Carrusel3D'
+import infoPaqueteRegalo from '../img/infoPaqueteRegalo.jpg'
+import infoTazas from '../img/infoTazas.jpg'
+import infoCanastas from '../img/infoCanastas.jpg'
+import infoCajas from '../img/infoCajas.jpg'
+import infoMarcos from '../img/infoMarcos.jpg'
+import infoBolsas from '../img/infoBolsas.jpg'
+import infoTarjetas from '../img/infoTarjetas.jpg'
+
 import slider3d1 from '../img/slider3d1.jpg'
 import slider3d2 from '../img/slider3d2.jpg'
 import slider3d3 from '../img/slider3d3.jpg'
 import slider3d4 from '../img/slider3d4.jpg'
 import slider3d5 from '../img/slider3d5.jpg'
+
+
 import Producto from './Producto'
 import './queofrecemos.css'
 
@@ -52,43 +62,43 @@ const QueOfrecemos = () => {
       <p className="queofrecemos-productos-terminos">Todos los pedidos son personalizados y los precios pueden variar acorde al trabajo</p>
       <div className="queofrecemos-productos">
         <Producto
-          img= {slider3d5}
+          img= {infoPaqueteRegalo}
           imginfo= "paquetes de regalo personalizado"
           nombre="Paquetes de regalo"
           rangoprecio="desde s/20"
         />
         <Producto
-          img= {slider3d5}
+          img= {infoCajas}
           imginfo= "cajas personalizadas"
           nombre="Cajas"
           rangoprecio="desde s/20"
         />
         <Producto
-          img= {slider3d5}
+          img= {infoBolsas}
           imginfo= "bolsas personalizadas"
           nombre="Bolsas"
           rangoprecio="desde s/20"
         />
         <Producto
-          img= {slider3d5}
+          img= {infoTazas}
           imginfo= "tazas personalizadas"
           nombre="Tazas"
           rangoprecio="desde s/20 "
         />
         <Producto
-          img= {slider3d5}
+          img= {infoCanastas}
           imginfo= "canastas de regalo"
           nombre="Canastas"
           rangoprecio="desde s/20"
         />
         <Producto
-          img= {slider3d5}
+          img= {infoTarjetas}
           imginfo= "Tarjetas personalizadas"
           nombre="Tarjetas"
           rangoprecio="desde s/20"
         />
         <Producto
-          img= {slider3d5}
+          img= {infoMarcos}
           imginfo= "marcos personalizados"
           nombre="Marcos"
           rangoprecio="desde s/20"

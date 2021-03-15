@@ -3,6 +3,8 @@
 }
 
 .quienessomos h2 {
+  margin: 20px auto;
+  max-width: 500px;
   font-size: 35px;
 }
 
@@ -12,6 +14,7 @@
   font-family: "Letters_for_Learners", sans-serif;
   width: 90%;
   max-width: 500px;
+  position: relative;
 }
 
 .quienessomos-marca {
@@ -26,6 +29,7 @@
   gap: 10px;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .quienessomos-valores-titulo {
@@ -39,4 +43,72 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.quienessomos-text::after,
+.quienessomos-misionvision::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: var(--cAmarillo);
+  border-radius: 100%;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -5;
+  top: 30%;
+  left: 30%;
+  animation: quienessomoscirculo 10s infinite alternate;
+}
+
+.quienessomos-valores::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: var(--cRojo);
+  border-radius: 100%;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -5;
+  top: 30%;
+  left: 30%;
+  animation: quienessomoscirculo2 10s infinite alternate;
+}
+
+@keyframes quienessomoscirculo {
+  20% {
+    top: 25%;
+    left: 25%;
+  }
+  40% {
+    top: 0%;
+    left: 20%;
+  }
+  80% {
+    top: 20%;
+    left: 50%;
+  }
+  100% {
+    top: 80%;
+    left: 80%;
+  }
+}
+
+@keyframes quienessomoscirculo2 {
+  20% {
+    top: 80%;
+    left: 80%;
+  }
+  40% {
+    top: 50%;
+    left: 70%;
+  }
+  80% {
+    top: 70%;
+    left: 50%;
+  }
+  100% {
+    top: 35%;
+    left: 35%;
+  }
 }

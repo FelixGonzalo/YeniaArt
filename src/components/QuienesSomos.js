@@ -12,7 +12,7 @@ const QuienesSomos = () => {
   return (
     <div className="quienessomos"> 
       <h2 className="titulo">¿Quiénes somos?</h2>
-      <p className="quienessomos-text">Negocio dedicado a la creación y venta de regalos personalizados con accesorios y el arte del lettering</p>
+      <p className="quienessomos-text">Negocio virtual dedicado a la creación y venta de regalos personalizados con accesorios y el arte del lettering</p>
       <img src={marca} alt="yeniaart" className="quienessomos-marca"/>
       <h3 className="subtitulo quienessomos-valores-titulo">Valores</h3>
       <div className="quienessomos-valores">
