@@ -1,0 +1,48 @@
+.queofrecemos {
+  padding: 20px;
+  font-size: 30px;
+  margin: auto;
+  max-width: 1300px;
+  font-family: "Letters_for_Learners", sans-serif;
+}
+
+.queofrecemos-resumen {
+  max-width: 900px;
+  margin: auto;
+}
+
+.queofrecemos-resumen-info {
+  max-width: 500px;
+}
+
+.queofrecemos-resumen-info ul li:first-child {
+  list-style: none;
+  margin-left: -20px;
+}
+
+.queofrecemos-resumen-info-titulo {
+  font-weight: bold;
+}
+
+.queofrecemos-productos-terminos {
+  max-width: 800px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.queofrecemos-productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media (min-width: 600px) {
+  .queofrecemos-resumen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

@@ -32,7 +32,7 @@
   align-items: center;
   gap: 10px;
   transition: 0.4s;
-  z-index: 5;
+  z-index: 10;
   background: linear-gradient(45deg, var(--cCeleste2) 95%, var(--cCeleste) 5%);
   text-align: center;
   box-sizing: border-box;

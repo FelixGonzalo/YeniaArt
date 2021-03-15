@@ -5,7 +5,7 @@ const DisplayProducto = (props) => {
     <div className="displayProducto">
       <div className="displayProducto-info">
         <p className="displayProducto-info-titulo">{props.titulo}</p>
-        <p className="displayProducto-info-antes">Producto especial a solo <span>{props.precioantes}</span></p>
+        <p className="displayProducto-info-antes">Producto especial ahora <span>{props.precioantes}</span></p>
         <p className="displayProducto-info-ahora">Antes <span>{props.precioahora}</span></p>
         <ul className=" displayProducto-info-descripcion">
           {

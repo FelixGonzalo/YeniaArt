@@ -1,0 +1,75 @@
+.carrusel3d {
+  width: 50%;
+  max-width: 250px;
+  height: 150px;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.carrusel3d input {
+  display: none;
+}
+
+.carrusel3d img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: 0.4s;
+  cursor: pointer;
+  user-select: none;
+}
+
+#radio1:checked ~ #slider3d1 img,
+#radio2:checked ~ #slider3d2 img,
+#radio3:checked ~ #slider3d3 img,
+#radio4:checked ~ #slider3d4 img,
+#radio5:checked ~ #slider3d5 img {
+  transform: translate3d(0, 0, 0px);
+}
+
+#radio1:checked ~ #slider3d2 img,
+#radio2:checked ~ #slider3d3 img,
+#radio3:checked ~ #slider3d4 img,
+#radio4:checked ~ #slider3d5 img,
+#radio5:checked ~ #slider3d1 img {
+  transform: translate3d(30px, 0, -100px);
+}
+
+#radio1:checked ~ #slider3d3 img,
+#radio2:checked ~ #slider3d4 img,
+#radio3:checked ~ #slider3d5 img,
+#radio4:checked ~ #slider3d1 img,
+#radio5:checked ~ #slider3d2 img {
+  transform: translate3d(65px, 0, -250px);
+}
+
+#radio1:checked ~ #slider3d4 img,
+#radio2:checked ~ #slider3d5 img,
+#radio3:checked ~ #slider3d1 img,
+#radio4:checked ~ #slider3d2 img,
+#radio5:checked ~ #slider3d3 img {
+  transform: translate3d(-65px, 0, -250px);
+}
+
+#radio1:checked ~ #slider3d5 img,
+#radio2:checked ~ #slider3d1 img,
+#radio3:checked ~ #slider3d2 img,
+#radio4:checked ~ #slider3d3 img,
+#radio5:checked ~ #slider3d4 img {
+  transform: translate3d(-30px, 0, -100px);
+}
+
+@media screen and (min-width: 600px) {
+  .carrusel3d {
+    width: 50%;
+    max-width: 300px;
+    height: 250px;
+  }
+}
