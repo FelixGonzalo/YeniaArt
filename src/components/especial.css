@@ -4,12 +4,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 30px 0px;
   gap: 30px;
-}
-
-.especial-info {
-  text-align: center;
 }
 
 .especial-info-title {
@@ -28,7 +25,7 @@
   font-family: "Letters_for_Learners", sans-serif;
 }
 
-.especial-vermas {
+.especial-boton {
   background: var(--cRojo2);
   border-radius: 10px;
   text-decoration: none;
@@ -50,7 +47,7 @@
   }
 }
 
-.especial-vermas:hover {
+.especial-boton:hover {
   transform: rotate(0deg);
   animation: none;
 }
@@ -72,7 +69,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .especial img {
     max-width: 400px;
     height: 400px;

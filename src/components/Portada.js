@@ -3,14 +3,15 @@ import './portada.css'
 import videoPortada from '../videos/portadavideo.mp4'
 import imgPortada from '../img/portada.jpg'
 
-const Portada = () => {
+const Portada = (props) => {
   return (
     <div className="portada">
       <div className="portada-left">
         <Especial 
-          titulo="Día de la Madre" 
-          info="Te amo Mamá" 
+          titulo="Amor al Lettering" 
+          info="Regalos para toda ocasión" 
           foto={imgPortada}
+          boton="Ver más"
         />
       </div>
       <div className="portada-right">

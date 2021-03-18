@@ -1,0 +1,13 @@
+.catalogo {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0px 10px;
+}
+
+.catalogo-productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}

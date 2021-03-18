@@ -1,4 +1,5 @@
 import './especial.css'
+import {Link} from "react-router-dom"
 
 const Especial = (props) => {
   return (
@@ -6,9 +7,9 @@ const Especial = (props) => {
       <div className="especial-info">
         <p className="especial-info-title">{props.titulo}</p>
         <p className="especial-info-text">{props.info}</p>
-        <a href="#ofertas" className="especial-vermas">
-          Ver más
-        </a>
+        <Link to="/tienda" className="especial-boton"> 
+         {props.boton}
+        </Link> 
       </div>
       <img src={props.foto} alt="producto especial"/>
     </div>    

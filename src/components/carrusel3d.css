@@ -19,8 +19,8 @@
   height: 100%;
   object-fit: cover;
   position: absolute;
-  border: 5px solid var(--cRojo);
-  background: var(--cRojo);
+  border: 2px solid var(--cGris);
+  background: var(--cGris);
   border-radius: 10px;
   transition: 0.4s;
   cursor: pointer;

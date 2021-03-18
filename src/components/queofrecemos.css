@@ -1,5 +1,5 @@
 .queofrecemos {
-  padding: 0 20px;
+  padding: 20px 20px 0;
   font-size: 30px;
   margin: auto;
   max-width: 1300px;
@@ -71,17 +71,10 @@
   font-weight: bold;
 }
 
-.queofrecemos-productos-terminos {
+.queofrecemos-terminos {
   max-width: 800px;
   text-align: center;
   margin: 50px auto 30px;
-}
-
-.queofrecemos-productos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
 }
 
 @media (min-width: 600px) {
