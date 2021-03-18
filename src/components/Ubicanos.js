@@ -25,7 +25,6 @@ const Ubicanos = () => {
           referencia="Cerca a no se donde"
           info="Aquí puedes comprar productos ya elaborados"
         />
-        
       </div>
     </div>
   );

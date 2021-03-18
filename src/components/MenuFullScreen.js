@@ -23,8 +23,8 @@ const MenuFullScreen = () => {
         <NavLink to="/quienessomos" onClick={(e) => cerrarMenu(e)} exact className="menuFullScreen-option" activeClassName="menuFullScreen-activate"> 
           ¿Quiénes somos?
         </NavLink>
-        <NavLink to="/tienda" onClick={(e) => cerrarMenu(e)} exact className="menuFullScreen-option" activeClassName="menuFullScreen-activate"> 
-          tienda
+        <NavLink to="/catalogo" onClick={(e) => cerrarMenu(e)} exact className="menuFullScreen-option" activeClassName="menuFullScreen-activate"> 
+          Catálogo
         </NavLink>
          <span className="menuFullScreen-opciones-cerrar" onClick={(e) => cerrarMenu(e)}>cerrar</span>
       </div>  

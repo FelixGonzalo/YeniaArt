@@ -11,7 +11,8 @@ import infoTarjetas from '../img/infoTarjetas.jpg'
 const Catalogo = () => {
   return (
     <div className="catalogo">
-      <h2 className="titulo">Bienvenido a nuestro catalogo</h2>
+      <h2 className="titulo">Bienvenido a nuestro catálogo</h2>
+      <p className="catalogo-descripcion">Toda compra o pedido mediante nuestro chat de Facebook o WhatsApp</p>
       <div className="catalogo-productos">
         <Producto
           img= {infoPaqueteRegalo}

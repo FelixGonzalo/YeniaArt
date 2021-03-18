@@ -7,12 +7,14 @@ import QueOfrecemos from './QueOfrecemos'
 import QuienesSomos from './QuienesSomos'
 import Catalogo from './Catalogo'
 import Ubicanos from './Ubicanos'
+import ContactBox from './ContactBox'
 
 const Routes = () => {
   return (
     <Fragment>
       <Router>
         <Header/>
+        <ContactBox/>
         <Switch>
           <Route path="/quienessomos" exact>
             <QuienesSomos/>

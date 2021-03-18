@@ -52,6 +52,7 @@ code {
   margin: 30px 0px 20px;
   font-family: "BALEHOME", sans-serif;
   letter-spacing: 5px;
+  user-select: none;
 }
 
 .subtitulo {
@@ -60,4 +61,5 @@ code {
   margin: 50px 0px 20px;
   font-family: "BALEHOME", sans-serif;
   letter-spacing: 5px;
+  user-select: none;
 }

@@ -4,6 +4,12 @@
   padding: 0px 10px;
 }
 
+.catalogo-descripcion {
+  text-align: center;
+  font-family: "Letters_for_Learners", sans-serif;
+  font-size: 25px;
+}
+
 .catalogo-productos {
   display: flex;
   flex-direction: row;

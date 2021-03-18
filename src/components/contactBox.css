@@ -1,0 +1,62 @@
+.contactbox {
+  position: fixed;
+  z-index: 2;
+  box-sizing: border-box;
+  margin: 10px 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  left: -100px;
+  background: var(--cGris4);
+  border: 3px solid var(--cGris);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contactbox-item {
+  width: 50px;
+  height: 50px;
+}
+
+.contactbox-switch {
+  position: absolute;
+  width: 130px;
+  height: 50px;
+  border-radius: 8px;
+  background: var(--cGris3);
+  border: 2px solid var(--cGris);
+  color: var(--cfondo);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contactbox-item-switch {
+  width: 40px;
+  height: 30px;
+  margin-right: 3px;
+  display: inline-block;
+  color: var(--cfondo);
+}
+
+.contactbox-true {
+  left: -0px;
+  transition: 0.3s;
+}
+
+.contactbox-switch-true {
+  background: none;
+  border: none;
+  width: 100px;
+}
+
+/* .contactbox:hover {
+  left: -0px;
+  transition: 0.3s;
+}
+
+.contactbox:hover .contactbox-switch {
+  width: 100px;
+} */

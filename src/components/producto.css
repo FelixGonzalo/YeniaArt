@@ -1,7 +1,7 @@
 .producto {
   width: 100%;
   max-width: 400px;
-  height: 350px;
+  min-height: 350px;
   background: var(--cGris3);
   padding: 15px;
   box-sizing: border-box;
@@ -39,4 +39,6 @@
 .producto-ver {
   width: 30px;
   height: 30px;
+  border-radius: 10px;
+  border: 2px solid var(--cNegro);
 }

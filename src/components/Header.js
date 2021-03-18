@@ -16,7 +16,7 @@ const Header = () => {
             ¿Quiénes somos?
           </NavLink> 
           <NavLink to="/catalogo" exact className="header-option" activeClassName="header-activate"> 
-            Catalogo
+            Catálogo
           </NavLink> 
       </div> 
       <MenuFullScreen/>

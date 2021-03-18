@@ -1,5 +1,5 @@
 import './producto.css'
-import iBuscar from '../img/buscar.svg'
+import iAgrandar from '../img/agrandar.svg'
 
 const Producto = (props) => {
   return (
@@ -10,7 +10,7 @@ const Producto = (props) => {
           <p className="producto-nombre">{props.nombre}</p>
           <p>{props.rangoprecio}</p>
         </div>
-        <img src={iBuscar} alt="buscar yeniaArt" className="producto-ver" />
+        <img src={iAgrandar} alt="buscar yeniaArt" className="producto-ver" />
       </div>
     </div>
   );

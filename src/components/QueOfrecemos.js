@@ -1,14 +1,10 @@
+import './queofrecemos.css'
 import Carrusel3D from './Carrusel3D'
-
 import slider3d1 from '../img/slider3d1.jpg'
 import slider3d2 from '../img/slider3d2.jpg'
 import slider3d3 from '../img/slider3d3.jpg'
 import slider3d4 from '../img/slider3d4.jpg'
 import slider3d5 from '../img/slider3d5.jpg'
-
-
-import Producto from './Producto'
-import './queofrecemos.css'
 
 const QueOfrecemos = () => {
   return (

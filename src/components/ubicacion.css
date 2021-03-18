@@ -13,7 +13,7 @@
   box-sizing: border-box;
   border: 2px solid var(--cGris2);
   border-radius: 10px;
-  position: absolute;
+  position: relative;
 }
 
 .ubicacion-foto {
