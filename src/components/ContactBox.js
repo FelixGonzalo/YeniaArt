@@ -6,7 +6,7 @@ import iChat from '../img/chat.svg'
 
 function ContactBox() {
 
-  const [estadoSwitch, setEstadoSwitch] = React.useState(false)
+  const [estadoSwitch, setEstadoSwitch] = React.useState(true)
 
   const activarswitch = () => {
     console.log("acativa")

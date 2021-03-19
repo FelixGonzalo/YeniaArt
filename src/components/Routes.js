@@ -14,12 +14,12 @@ const Routes = () => {
     <Fragment>
       <Router>
         <Header/>
-        <ContactBox/>
         <Switch>
           <Route path="/quienessomos" exact>
             <QuienesSomos/>
           </Route>
           <Route path="/catalogo" exact>
+            <ContactBox/>
             <Catalogo/>
           </Route>
           <Route path="/">

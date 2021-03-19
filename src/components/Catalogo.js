@@ -7,12 +7,15 @@ import infoCajas from '../img/infoCajas.jpg'
 import infoMarcos from '../img/infoMarcos.jpg'
 import infoBolsas from '../img/infoBolsas.jpg'
 import infoTarjetas from '../img/infoTarjetas.jpg'
+import iChat from '../img/chat.svg'
 
 const Catalogo = () => {
   return (
     <div className="catalogo">
       <h2 className="titulo">Bienvenido a nuestro catálogo</h2>
-      <p className="catalogo-descripcion">Toda compra o pedido mediante nuestro chat de Facebook o WhatsApp</p>
+      <p className="catalogo-descripcion">Toda compra o pedido mediante nuestro chat de Facebook o WhatsApp
+        <img src={iChat} alt="" className="contactbox-item-switch"/>
+      </p>
       <div className="catalogo-productos">
         <Producto
           img= {infoPaqueteRegalo}

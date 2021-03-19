@@ -28,7 +28,7 @@
   right: 0;
 }
 
-.ubicacion-foto:active {
+.ubicacion-foto:hover {
   width: 100%;
   height: 276px;
   border-radius: 10px;

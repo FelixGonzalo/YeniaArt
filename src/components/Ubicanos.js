@@ -22,7 +22,7 @@ const Ubicanos = () => {
           googlemap="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984.9700500707099!2d-78.59353095943402!3d-9.07467731573326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ab8114e4143fb1%3A0x6df649e592a247a9!2sFoto%20Felix!5e0!3m2!1ses-419!2spe!4v1615600041713!5m2!1ses-419!2spe" 
           nombre="Foto Felix"
           ciudad="Chimbote"
-          referencia="Cerca a no se donde"
+          referencia="Jr. Elías Aguirre"
           info="Aquí puedes comprar productos ya elaborados"
         />
       </div>
