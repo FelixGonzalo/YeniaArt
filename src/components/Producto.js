@@ -1,6 +1,6 @@
 import React from 'react'
 import './producto.css'
-import iAgrandar from '../img/agrandar.svg'
+import iAgrandar from '../img/icon/agrandar.svg'
 import ProductoModal from './ProductoModal'
 
 const Producto = (props) => {

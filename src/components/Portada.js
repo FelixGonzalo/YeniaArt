@@ -1,6 +1,6 @@
 import Especial from './Especial'
 import './portada.css'
-import videoPortada from '../videos/portadavideo.mp4'
+import imgFrase from '../img/fotoFrase.jpg'
 import imgPortada from '../img/portada.jpg'
 
 const Portada = (props) => {
@@ -15,7 +15,8 @@ const Portada = (props) => {
         />
       </div>
       <div className="portada-right">
-        <video src={videoPortada} width="640" height="480" autoPlay muted loop></video>
+        <img src={imgFrase} alt="frase de yeniart" className="portada-fotofrase"/>
+        {/* <video src={videoPortada} width="640" height="480" autoPlay muted loop></video> */}
       </div>
     </div>
   );

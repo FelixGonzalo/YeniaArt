@@ -7,7 +7,7 @@ import infoCajas from '../img/infoCajas.jpg'
 import infoMarcos from '../img/infoMarcos.jpg'
 import infoBolsas from '../img/infoBolsas.jpg'
 import infoTarjetas from '../img/infoTarjetas.jpg'
-import iChat from '../img/chat.svg'
+import iChat from '../img/icon/chat.svg'
 
 const Catalogo = () => {
   return (

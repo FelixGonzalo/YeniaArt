@@ -1,5 +1,5 @@
 import './footer.css'
-import iFacebook from '../img/icon_facebook.svg'
+import iFacebook from '../img/icon/icon_facebook.svg'
 
 const Footer = () => {
   return (

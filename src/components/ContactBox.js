@@ -1,8 +1,8 @@
 import React from 'react'
 import './contactBox.css'
-import iWhatsapp from '../img/icon_whatsapp.svg'
-import iMessenger from '../img/icon_messenger.svg'
-import iChat from '../img/chat.svg'
+import iWhatsapp from '../img/icon/icon_whatsapp.svg'
+import iMessenger from '../img/icon/icon_messenger.svg'
+import iChat from '../img/icon/chat.svg'
 
 function ContactBox() {
 
