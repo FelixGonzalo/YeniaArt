@@ -27,8 +27,8 @@ const Routes = () => {
             <Inicio/>
           </Route>
         </Switch>
+        <Footer/>
       </Router>
-      <Footer/>
     </Fragment>
   );
 }

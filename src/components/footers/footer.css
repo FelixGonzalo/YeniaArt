@@ -1,26 +1,86 @@
 .footer {
   box-sizing: border-box;
   background: var(--cfooter);
-  padding: 20px;
-  margin-top: 40px;
-  color: var(--cGris);
-  user-select: none;
-  border-top: 2px solid rgb(255, 255, 255);
+  padding: 40px 20px 5px;
+  border-top: 3px solid #ffffff;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-bottom {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  color: var(--ctexto1);
+  margin-top: 30px;
   font-size: 14px;
 }
 
+.footer h2 {
+  color: var(--ctexto2);
+  margin: 0;
+  font-size: 30px;
+  font-family: "Mystical_Snow", sans-serif;
+  font-weight: 100;
+  text-shadow: 2px 2px 3px rgb(58, 58, 58);
+}
+
 .footer img {
-  height: 40px;
+  height: 20px;
   border: 2px solid white;
   border-radius: 3px;
   background: white;
 }
 
 .footer p {
-  text-shadow: 2px 2px 3px white;
+  color: var(--ctexto2);
+  text-shadow: 2px 2px 3px rgb(58, 58, 58);
+}
+
+.footer-lista {
+  list-style: none;
+  color: var(--ctexto2);
+  text-shadow: 2px 2px 3px rgb(58, 58, 58);
+  padding-left: 0;
+}
+
+.footer-lista-titulo {
+  margin-bottom: 5px;
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.footer-lista-link {
+  text-decoration: none;
+  color: var(--ctexto2);
+  text-shadow: 2px 2px 3px rgb(58, 58, 58);
+  margin-left: 8px;
+}
+
+.footer-lista li {
+  margin-bottom: 5px;
+}
+
+.footer-lista li:hover .footer-lista-link {
+  color: var(--ctexto3);
+}
+
+@media (min-width: 400px) {
+  .footer-top {
+    gap: 40px;
+  }
+}
+
+@media (min-width: 800px) {
+  .footer {
+    padding: 40px 70px 10px;
+  }
+  .footer-top {
+    gap: 100px;
+  }
 }

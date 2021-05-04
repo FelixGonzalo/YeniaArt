@@ -1,0 +1,30 @@
+.flujopedido {
+  background: rgb(245, 185, 185);
+  box-shadow: 1px 1px 7px #504c4c;
+  padding: 20px 20px 70px;
+  margin-top: 80px;
+}
+
+.flujopedido h2 {
+  text-shadow: 1px 1px 2px white;
+}
+
+.flujopedido-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.flujopedido-item {
+  max-width: 330px;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px white;
+}
+
+.flujopedido-item img {
+  width: 100px;
+}

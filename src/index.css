@@ -15,10 +15,13 @@ code {
 
 :root {
   --cfondo: #e7e4e4;
+  --cfondo2: #ddd5c4;
   --cheader: #700505;
-  --cfooter: #8bd5e7;
+  --cfooter: #64656d;
+  /*#c7d44d*/
   --ctexto1: #242424;
   --ctexto2: #e7e4e4;
+  --ctexto3: #c8d64e;
   --cportada: #c8d64e;
   --cportada2: #48b3ce;
   --cbtn: #b73e3e;

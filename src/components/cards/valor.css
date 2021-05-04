@@ -2,7 +2,7 @@
   width: 250px;
   height: 300px;
   text-align: center;
-  border: 2px solid var(--cCeleste);
+  border: 2px solid var(--cRojo);
   border-radius: 6px;
   box-sizing: border-box;
   padding: 5px 20px;
@@ -13,7 +13,7 @@
   justify-content: center;
   font-size: 25px;
   font-family: "Letters_for_Learners", sans-serif;
-  background: #d6e9ee;
+  background: var(--cfondo);
 }
 
 .valor img {
@@ -23,9 +23,11 @@
 
 .valor-nombre {
   font-weight: bold;
-  color: var(--cCeleste);
+  color: var(--cRojo);
+  font-size: 28px;
 }
 
 .valor-descripcion {
   color: var(--cGris);
+  font-size: 28px;
 }

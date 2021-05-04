@@ -12,16 +12,17 @@ const QueOfrecemos = () => {
       <h2 className="queofrecemos-titulo titulo">¿Qué ofrecemos?</h2>
       <div className="queofrecemos-resumen">
         <div className="queofrecemos-resumen-info">
-          <p className="queofrecemos-resumen-info-titulo">Regalos para toda ocasión:</p>
+          <p className="queofrecemos-resumen-info-titulo">Regalos para todo evento:</p>
           <p>Cajas, Bolsas , Tazas, Canastas, Tarjetas, Marcos, Paquetes de regalos y mucho más.</p>
           <ul>
-            <li>Pedidos personalizados donde tu decides:</li>
+            <li>Donde tu decides:</li>
             <li>Textos.</li>
             <li>Colores.</li>
             <li>Dibujos.</li>
             <li>Temática.</li>
             <li>Dulces.</li>
             <li>Peluches.</li>
+            <li>Etc.</li>
           </ul>      
         </div>
           <Carrusel3D
@@ -50,7 +51,7 @@ const QueOfrecemos = () => {
           />
       </div>
       <p className="queofrecemos-terminos">
-        Los pedidos personalizados tienen precios que pueden variar acorde al trabajo, tiempo de entrega, contenido y delivery</p>
+        Los pedidos personalizados tienen precios que pueden variar acorde al trabajo, tiempo de entrega, contenido y delivery.</p>
     </section>
   );
 }

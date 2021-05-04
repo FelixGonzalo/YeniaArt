@@ -21,11 +21,12 @@
   box-sizing: border-box;
   border-radius: 10px;
   width: 100%;
+  height: 350px;
   box-shadow: 1px 1px 0px 4px #444343;
   transform: rotate(2deg);
 }
 
-.portada-fotofrase {
+.portada-fotoslider {
   border-radius: 10px;
   height: 100%;
   width: 100%;
@@ -58,6 +59,9 @@
   .portada {
     max-height: 550px;
   }
+  .portada-right {
+    height: 590px;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -75,7 +79,6 @@
   }
   .portada-right {
     max-width: 570px;
-    height: 590px;
   }
 }
 
