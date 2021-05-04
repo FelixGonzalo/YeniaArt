@@ -22,6 +22,8 @@ code {
   --ctexto1: #242424;
   --ctexto2: #e7e4e4;
   --ctexto3: #c8d64e;
+  --ctexto4: #b73e3e;
+  --ctexto5: #62a773;
   --cportada: #c8d64e;
   --cportada2: #48b3ce;
   --cbtn: #b73e3e;
@@ -38,7 +40,6 @@ code {
   --cGris4: #e0e0e0;
   --cAmarillo: #f2c94c;
   --cAmarillo2: #c8d64e;
-  --cVerde: #62a773;
 }
 
 @font-face {

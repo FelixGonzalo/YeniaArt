@@ -1,5 +1,6 @@
 import './footer.css'
 import {Link} from "react-router-dom"
+import iWhatsapp from '../../img/icon/icon_whatsapp.svg'
 import iFacebook from '../../img/icon/icon_facebook.svg'
 
 const Footer = () => {
@@ -8,8 +9,8 @@ const Footer = () => {
       <div  className="footer-top">
         <div>
           <h2>YeniaArt</h2>
-          <p>Celular: 123456789</p>
-          <p>Atención virtual: 8am - 9pm</p>
+          <p>Celular : 123456789</p>
+          <p>Horario : 8am - 9pm</p>
         </div>
         <ul className="footer-lista">
           <li className="footer-lista-titulo">
@@ -34,8 +35,15 @@ const Footer = () => {
       </div>
       
       <div className="footer-bottom">
-        <p>© Todos los derechos reservados 2021</p>
-        <a href="https://www.facebook.com/YeniaArt/" target="_blank" rel="noreferrer"><img src={iFacebook} alt=""/></a>
+        <p><span>©</span> Todos los derechos reservados 2021</p>
+        <div>
+          <a href="https://api.whatsapp.com/send?phone=51957498221" target="_blank" rel="noreferrer">
+            <img src={iWhatsapp} alt=""/>
+          </a>
+          <a href="https://www.facebook.com/YeniaArt/" target="_blank" rel="noreferrer">
+            <img src={iFacebook} alt=""/>
+          </a>
+        </div>
       </div>
     </footer>
   );

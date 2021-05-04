@@ -28,3 +28,39 @@
 .flujopedido-item img {
   width: 100px;
 }
+
+.flujopedido-boton {
+  background: var(--cbtn);
+  text-decoration: none;
+  color: var(--ctexto2);
+  padding: 10px 20px 15px;
+  border-radius: 10px;
+  text-shadow: none;
+  margin-top: 25px;
+  display: block;
+}
+
+.flujopedido-contactanos {
+  margin-top: 25px;
+}
+
+.flujopedido-contactanos img {
+  width: 29px;
+  background: var(--cfondo);
+  padding: 2px;
+  border-radius: 10px;
+  border: 5px solid var(--cbtn);
+}
+
+.flujopedido-contactanos img:last-child {
+  margin-left: 5px;
+}
+
+.flujopedido-entrega {
+  font-size: 18px;
+  color: var(--ctexto4);
+  font-weight: bold;
+  text-shadow: none;
+  max-width: 200px;
+  margin: auto;
+}

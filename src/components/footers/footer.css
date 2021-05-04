@@ -9,7 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 10px;
+  gap: 25px;
 }
 
 .footer-bottom {
@@ -22,9 +22,9 @@
 }
 
 .footer h2 {
-  color: var(--ctexto2);
+  color: var(--ctexto3);
   margin: 0;
-  font-size: 30px;
+  font-size: 33px;
   font-family: "Mystical_Snow", sans-serif;
   font-weight: 100;
   text-shadow: 2px 2px 3px rgb(58, 58, 58);
@@ -33,13 +33,20 @@
 .footer img {
   height: 20px;
   border: 2px solid white;
+  box-shadow: 1px 1px 2px 1px rgb(73, 72, 72);
   border-radius: 3px;
   background: white;
+  margin-left: 5px;
 }
 
 .footer p {
+  margin-top: 10px;
   color: var(--ctexto2);
   text-shadow: 2px 2px 3px rgb(58, 58, 58);
+}
+
+.footer p span {
+  color: var(--ctexto3);
 }
 
 .footer-lista {
@@ -53,6 +60,7 @@
   margin-bottom: 5px;
   font-size: 25px;
   margin-top: 0;
+  color: var(--ctexto3);
 }
 
 .footer-lista-link {
