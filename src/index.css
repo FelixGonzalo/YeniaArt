@@ -16,11 +16,18 @@ code {
 :root {
   --cfondo: #e7e4e4;
   --cheader: #700505;
+  --cfooter: #8bd5e7;
+  --ctexto1: #242424;
+  --ctexto2: #e7e4e4;
+  --cportada: #c8d64e;
+  --cportada2: #48b3ce;
+  --cbtn: #b73e3e;
+
   --cCeleste: #5994a3;
   --cCeleste2: #bce0e9;
   --cCeleste3: #3b7d8d;
   --cRojo: #b73e3e;
-  --cRojo2: #bd0505;
+  --cRojo2: #bb4b4b;
   --cNegro: black;
   --cGris: #242424;
   --cGris2: #817f7f;

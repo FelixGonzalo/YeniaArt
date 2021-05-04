@@ -1,0 +1,26 @@
+.footer {
+  box-sizing: border-box;
+  background: var(--cfooter);
+  padding: 20px;
+  margin-top: 40px;
+  color: var(--cGris);
+  user-select: none;
+  border-top: 2px solid rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ctexto1);
+  font-size: 14px;
+}
+
+.footer img {
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 3px;
+  background: white;
+}
+
+.footer p {
+  text-shadow: 2px 2px 3px white;
+}

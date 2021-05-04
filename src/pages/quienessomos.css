@@ -1,15 +1,17 @@
 .quienessomos {
   text-align: center;
-  background: var(--cGris4);
-  max-width: 950px;
-  margin: auto;
 }
 
 .quienessomos h2 {
   margin: 0px auto;
-  padding-top: 40px;
+  padding-top: 70px;
+  margin-bottom: 30px;
   max-width: 500px;
   font-size: 35px;
+}
+
+.quienessomos h3 {
+  margin-top: 20px;
 }
 
 .quienessomos-text {
@@ -34,6 +36,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 0px 20px;
 }
 
 .quienessomos-valores-titulo {
@@ -69,7 +72,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background: var(--cRojo);
+  background: var(--cAmarillo);
   border-radius: 100%;
   opacity: 0.5;
   position: absolute;

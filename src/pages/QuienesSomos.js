@@ -1,19 +1,32 @@
+import Portada from '../components/Portadas/Portada'
 import iArte from '../img/icon/arte.svg'
 import iCalidad from '../img/icon/calidad.svg'
 import iTransparencia from '../img/icon/transparencia.svg'
 import iMision from '../img/icon/mision.svg'
 import iVision from '../img/icon/vision.svg'
 import marca from '../img/marca.png'
-import Valor from './Valor'
+import Valor from '../components/cards/Valor'
 import './quienessomos.css'
-import Mision from './Mision'
+import Mision from '../components/Mision'
 
 const QuienesSomos = () => {
   return (
     <div className="quienessomos"> 
+      <Portada/>
       <h2 className="titulo">¿Quiénes somos?</h2>
-      <p className="quienessomos-text">Negocio virtual dedicado a la creación y venta de regalos personalizados con accesorios y el arte del lettering</p>
-      <img src={marca} alt="yeniaart" className="quienessomos-marca"/>
+      <p className="quienessomos-text">YeniaArt es un tienda de regalos virtual dedicada a la creación de productos personalizados con accesorios y el arte del lettering.</p>
+      <div className="quienessomos-misionvision">
+        <Mision
+          nombre="Misión"
+          descripcion="Ofrecer a nuestros clientes regalos de calidad que pueden personalizar para todo tipo de evento."
+          icon={iMision}
+        />
+        <Mision
+          nombre="Visión"
+          descripcion="En el 2022 ser una empresa lider en la venta de regalos en la provincia del Santa ofreciendo una amplia gama de productos de calidad."
+          icon={iVision}
+        />
+      </div>
       <h3 className="subtitulo quienessomos-valores-titulo">Valores</h3>
       <div className="quienessomos-valores">
         <Valor
@@ -32,18 +45,7 @@ const QuienesSomos = () => {
           descripcion="Trabajo honesto y responsable"
         />
       </div>
-      <div className="quienessomos-misionvision">
-        <Mision
-          nombre="Misión"
-          descripcion="Ofrecer a nuestros clientes regalos de calidad que pueden personalizar para todo tipo de evento"
-          icon={iMision}
-        />
-        <Mision
-          nombre="Visión"
-          descripcion="En el 2022 ser una empresa lider en la venta de regalos en la provincia del Santa ofreciendo una amplia gama de productos de calidad."
-          icon={iVision}
-        />
-      </div>
+      
     </div>
   );
 }

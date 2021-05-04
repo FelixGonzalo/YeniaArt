@@ -1,11 +1,11 @@
 import Ubicacion from './Ubicacion'
-import ubicacion1 from '../img/ubicacion_fotofelixNvoChimbote.jpg'
-import ubicacion2 from '../img/ubicacion_fotofelixChimbote.jpg'
+import ubicacion1 from '../../img/ubicacion_fotofelixNvoChimbote.jpg'
+import ubicacion2 from '../../img/ubicacion_fotofelixChimbote.jpg'
 import './ubicanos.css'
 
 const Ubicanos = () => {
   return (
-    <div className="ubicanos">
+    <section className="ubicanos">
       <h2 className="ubicanos-titulo titulo">Ubicanos</h2>
       <p className="ubicanos-text">Puedes encontrar nuestros productos en tiendas amigas</p>
       <div className="ubicanos-items">
@@ -15,7 +15,7 @@ const Ubicanos = () => {
           nombre="Foto Felix"
           ciudad="Nuevo Chimbote"
           referencia="Ovalo de la Familia"
-          info="Aquí puedes realizar pedidos y comprar productos ya elaborados"
+          info="Aquí puedes realizar y recoger pedidos"
         />
         <Ubicacion 
           foto={ubicacion2}
@@ -23,10 +23,10 @@ const Ubicanos = () => {
           nombre="Foto Felix"
           ciudad="Chimbote"
           referencia="Jr. Elías Aguirre"
-          info="Aquí puedes comprar productos ya elaborados"
+          info="Aquí puedes recoger pedidos"
         />
       </div>
-    </div>
+    </section>
   );
 }
  

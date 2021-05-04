@@ -1,0 +1,170 @@
+.portada {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: var(--cportada);
+  padding: 20px;
+  box-shadow: 0 0 0 3px #444343;
+  position: relative;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+.portada-left {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.portada-right {
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 1px 1px 0px 4px #444343;
+  transform: rotate(2deg);
+}
+
+.portada-fotofrase {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 600px) {
+  .portada {
+    gap: 60px;
+    padding-bottom: 40px;
+  }
+  .portada-left {
+    border-radius: 30px;
+    max-width: 80vw;
+  }
+  .portada-right {
+    max-width: 500px;
+    margin-top: -40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portada {
+    gap: 20px;
+    padding-bottom: 0;
+  }
+  .portada-left {
+    max-width: 50vw;
+  }
+  .portada {
+    max-height: 550px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .portada-left {
+    max-width: 740px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .portada-left {
+    max-width: 780px;
+  }
+  .portada {
+    gap: 0;
+  }
+  .portada-right {
+    max-width: 570px;
+    height: 590px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .portada-left {
+    max-width: 850px;
+  }
+}
+
+/*especial*/
+
+.especial {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0px;
+  gap: 30px;
+}
+
+.especial-info-title {
+  font-family: "Letters_for_Learners", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.especial-info-text {
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: "Letters_for_Learners", sans-serif;
+}
+
+.especial-boton {
+  background: var(--cbtn);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--ctexto2);
+  height: 50px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 20px;
+  padding-top: 11px;
+  font-size: 20px;
+  transform: rotate(2deg);
+  animation: botonespecial 2s infinite alternate;
+}
+
+@keyframes botonespecial {
+  to {
+    border-radius: 40px;
+  }
+}
+
+.especial-boton:hover {
+  transform: rotate(0deg);
+  animation: none;
+}
+
+.especial img {
+  border-radius: 20px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transform: rotate(2deg);
+  box-shadow: 1px 1px 0px 3px #444343;
+}
+
+@media (min-width: 600px) {
+  .especial {
+    flex-direction: row;
+  }
+  .especial img {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .especial img {
+    max-width: 400px;
+    height: 400px;
+  }
+  .especial {
+    gap: 50px;
+  }
+}

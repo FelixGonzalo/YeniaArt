@@ -1,13 +1,13 @@
 .carrusel3d {
-  width: 50%;
-  max-width: 250px;
-  height: 150px;
+  width: 70%;
+  max-width: 220px;
+  height: 220px;
   display: block;
   margin: auto;
   margin-top: 50px;
   position: relative;
   transform-style: preserve-3d;
-  perspective: 1000px;
+  perspective: 1500px;
 }
 
 .carrusel3d input {
@@ -72,5 +72,15 @@
     width: 50%;
     max-width: 300px;
     height: 250px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .carrusel3d {
+    width: 30%;
+    max-width: 350px;
+    height: 320px;
+    perspective: 1500px;
   }
 }
