@@ -2,13 +2,12 @@ import {Fragment} from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Footer from './components/footers/Footer'
 import Header from './components/headers/Header'
-
-import QuienesSomos from './pages/QuienesSomos'
-import Catalogo from './components/Catalogo'
-
-import ContactBox from './components/ContactBox'
+import Catalogo from './pages/Catalogo'
 
 import Inicio from './pages/Inicio'
+import QuienesSomos from './pages/QuienesSomos'
+
+
 
 const Routes = () => {
   return (
@@ -20,7 +19,6 @@ const Routes = () => {
             <QuienesSomos/>
           </Route>
           <Route path="/catalogo" exact>
-            <ContactBox/>
             <Catalogo/>
           </Route>
           <Route path="/">

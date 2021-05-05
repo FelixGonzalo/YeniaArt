@@ -1,3 +1,4 @@
+import React from 'react'
 import iArte from '../img/icon/arte.svg'
 import iCalidad from '../img/icon/calidad.svg'
 import iTransparencia from '../img/icon/transparencia.svg'
@@ -5,11 +6,17 @@ import iMision from '../img/icon/mision.svg'
 import iVision from '../img/icon/vision.svg'
 import Valor from '../components/cards/Valor'
 import './quienessomos.css'
-import Mision from '../components/Mision'
+import Portada from '../components/Portadas/Portada'
 
 const QuienesSomos = () => {
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
-    <div className="quienessomos"> 
+    <main className="quienessomos"> 
+      <Portada/>
       <h2 className="titulo">¿Quiénes somos?</h2>
       <p className="quienessomos-text">YeniaArt es un tienda de regalos virtual dedicada a la creación de productos personalizados con accesorios y el arte del lettering.</p>
       <div className="quienessomos-valores">
@@ -30,20 +37,19 @@ const QuienesSomos = () => {
         />
       </div>
       <div className="quienessomos-misionvision">
-        <Mision
-          nombre="Misión"
-          descripcion="Ofrecer a nuestros clientes regalos de calidad que pueden personalizar para todo tipo de evento."
-          icon={iMision}
-        />
-        <Mision
-          nombre="Visión"
-          descripcion="En el 2022 ser una empresa lider en la venta de regalos en la provincia del Santa ofreciendo una amplia gama de productos de calidad."
-          icon={iVision}
-        />
+        <div className="mision">
+          <p className="mision-nombre">Misión</p>
+          <p className="mision-descripcion">Ofrecer a nuestros clientes regalos de calidad que pueden personalizar para todo tipo de evento.</p>
+          <img src={iMision} alt=""/>
+        </div>
+
+        <div className="mision">
+          <p className="mision-nombre">Visión</p>
+          <p className="mision-descripcion">En el 2022 ser una empresa lider en la venta de regalos en la provincia del Santa ofreciendo una amplia gama de productos de calidad.</p>
+          <img src={iVision} alt=""/>
+        </div>
       </div>
-      
-      
-    </div>
+    </main>
   );
 }
  

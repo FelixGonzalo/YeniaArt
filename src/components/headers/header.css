@@ -5,14 +5,16 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 10vh;
+  min-height: 70px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   padding: 5px 20px;
   gap: 10px;
   margin: auto;
   background: var(--cheader);
   border-bottom: 2px solid var(--cfondo);
+  position: relative;
+  z-index: 10;
 }
 
 .header-negocio {
@@ -67,7 +69,11 @@
   margin-left: 10px;
 }
 
-@media (min-width: 600px) {
+.header-celular {
+  display: none;
+}
+
+@media (min-width: 800px) {
   .header {
     background: none;
     border-bottom: none;
@@ -81,9 +87,7 @@
   .header-redsocial {
     color: var(--ctexto1);
   }
-}
 
-@media (min-width: 1000px) {
   .header-option {
     display: block;
     margin: 0px 10px;
@@ -94,7 +98,18 @@
   .header-option:hover {
     text-decoration: overline;
   }
+  .header .menuFullScreen-abrir {
+    display: none;
+  }
 
+  .header-celular {
+    display: block;
+    font-weight: bold;
+    color: var(--ctexto5);
+  }
+}
+
+@media (min-width: 1000px) {
   .header-activate {
     font-weight: bold;
   }

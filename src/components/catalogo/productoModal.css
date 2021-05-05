@@ -10,10 +10,19 @@
   align-items: center;
 }
 
+.productoModal-container::after {
+  content: "x";
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
 .productoModal {
-  border: 2px solid var(--cNegro);
+  border: 2px solid #242424;
   border-radius: 20px;
-  background: var(--cGris4);
+  background: var(--cfondo7);
   width: 80vw;
   height: 80vh;
   padding: 10px;

@@ -1,32 +1,22 @@
 import {NavLink} from "react-router-dom"
 import './menuFullScreen.css'
 
-const MenuFullScreen = () => {
-
-  const cerrarMenu = (e) => {
-    document.getElementById('menuFullScreen-opciones').classList.remove('menu-abrir')
-       document.body.style.overflow = "auto"
-  }
-
-  const abrirMenu = (e) => {
-    document.getElementById('menuFullScreen-opciones').classList.add('menu-abrir')
-    document.body.style.overflow = "hidden"
-  }
+const MenuFullScreen = (props) => {
 
   return (
     <div className="menuFullScreen">
-      <span className="menuFullScreen-abrir" onClick={(e) => abrirMenu(e)}>menu</span>
+      {/* <span className="menuFullScreen-abrir" onClick={(e) => abrirMenu(e)}>menu</span> */}
       <div className="menuFullScreen-opciones" id="menuFullScreen-opciones">
-        <NavLink to="/" onClick={(e) => cerrarMenu(e)} exact className="menuFullScreen-option" activeClassName="menuFullScreen-activate">
+        <NavLink to="/" onClick={(e) => props.activarMenu(e)} exact className="menuFullScreen-option" activeClassName="menuFullScreen-activate">
           Inicio
         </NavLink>
-        <NavLink to="/quienessomos" onClick={(e) => cerrarMenu(e)} exact className="menuFullScreen-option" activeClassName="menuFullScreen-activate"> 
+        <NavLink to="/quienessomos" onClick={(e) => props.activarMenu(e)} exact className="menuFullScreen-option" activeClassName="menuFullScreen-activate"> 
           ¿Quiénes somos?
         </NavLink>
-        <NavLink to="/catalogo" onClick={(e) => cerrarMenu(e)} exact className="menuFullScreen-option" activeClassName="menuFullScreen-activate"> 
+        <NavLink to="/catalogo" onClick={(e) => props.activarMenu(e)} exact className="menuFullScreen-option" activeClassName="menuFullScreen-activate"> 
           Catálogo
         </NavLink>
-         <span className="menuFullScreen-opciones-cerrar" onClick={(e) => cerrarMenu(e)}>cerrar</span>
+         <span className="menuFullScreen-opciones-cerrar" onClick={(e) => props.activarMenu(e)}>cerrar</span>
       </div>  
     </div>  
   );

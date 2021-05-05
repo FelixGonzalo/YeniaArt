@@ -15,31 +15,27 @@ code {
 
 :root {
   --cfondo: #e7e4e4;
-  --cfondo2: #ddd5c4;
+  --cfondo2: #cdd1a4;
+  --cfondo3: #f0a4a4;
+  --cfondo4: #eeeeee;
+  --cfondo5: #c7bbbb;
+  --cfondo6: #ad9898;
+  --cfondo7: #dfdfdf;
   --cheader: #700505;
   --cfooter: #64656d;
-  /*#c7d44d*/
+  --cportada: #c8d64e;
+  --cportada2: #48b3ce;
+
   --ctexto1: #242424;
   --ctexto2: #e7e4e4;
   --ctexto3: #c8d64e;
   --ctexto4: #b73e3e;
   --ctexto5: #62a773;
-  --cportada: #c8d64e;
-  --cportada2: #48b3ce;
-  --cbtn: #b73e3e;
+  --ctexto6: #700505;
 
-  --cCeleste: #5994a3;
-  --cCeleste2: #bce0e9;
-  --cCeleste3: #3b7d8d;
-  --cRojo: #b73e3e;
-  --cRojo2: #bb4b4b;
-  --cNegro: black;
-  --cGris: #242424;
-  --cGris2: #817f7f;
-  --cGris3: #d8d4d4;
-  --cGris4: #e0e0e0;
-  --cAmarillo: #f2c94c;
-  --cAmarillo2: #c8d64e;
+  --cbtn: #b73e3e;
+  --cbtn2: #f2c94c;
+  --cbtn3: #242424;
 }
 
 @font-face {
@@ -63,7 +59,6 @@ code {
   margin: 30px 0px 20px;
   font-family: "BALEHOME", sans-serif;
   letter-spacing: 5px;
-  user-select: none;
 }
 
 .subtitulo {
@@ -72,5 +67,8 @@ code {
   margin: 50px 0px 20px;
   font-family: "BALEHOME", sans-serif;
   letter-spacing: 5px;
-  user-select: none;
+}
+
+.body-overflow-off {
+  overflow: hidden;
 }

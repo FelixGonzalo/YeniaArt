@@ -74,7 +74,7 @@
 }
 
 .queofrecemos-terminos {
-  max-width: 800px;
+  max-width: 1000px;
   text-align: center;
   margin: 20px auto 30px;
 }
@@ -91,10 +91,16 @@
 
 @media (min-width: 1000px) {
   .queofrecemos {
-    max-width: 1160px;
+    max-width: 1300px;
   }
 
   .queofrecemos-resumen-info {
     margin-right: 100px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .queofrecemos-resumen-info {
+    margin-right: 200px;
   }
 }

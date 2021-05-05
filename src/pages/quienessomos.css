@@ -4,12 +4,8 @@
 }
 
 .quienessomos h2 {
-  margin: 0px auto;
   padding-top: 30px;
   margin-bottom: 30px;
-  max-width: 500px;
-  font-size: 35px;
-  color: var(--cRojo);
 }
 
 .quienessomos-text {
@@ -54,7 +50,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background: var(--cAmarillo);
+  background: #f2c94c;
   border-radius: 100%;
   opacity: 0.5;
   position: absolute;
@@ -68,7 +64,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background: var(--cAmarillo);
+  background: #f2c94c;
   border-radius: 100%;
   opacity: 0.5;
   position: absolute;
@@ -113,5 +109,44 @@
   100% {
     top: 35%;
     left: 35%;
+  }
+}
+
+/* MISION */
+
+.mision {
+  width: 100%;
+  max-width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.mision-nombre {
+  font-family: "Letters_for_Learners", sans-serif;
+  color: #b73e3e;
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0;
+}
+
+.mision-descripcion {
+  font-size: 28px;
+  font-family: "Letters_for_Learners", sans-serif;
+}
+
+.mision img {
+  margin-top: 20px;
+  width: 65px;
+  height: 65px;
+}
+
+.quienessomos .portada {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .quienessomos .portada {
+    display: flex;
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './producto.css'
-import iAgrandar from '../img/icon/agrandar.svg'
+import iAgrandar from '../../img/icon/agrandar.svg'
 import ProductoModal from './ProductoModal'
 
 const Producto = (props) => {
@@ -20,13 +20,12 @@ const Producto = (props) => {
         /> 
         : null
       }
-      <img src={props.img} alt={props.imginfo} className="producto-foto"/>
-      <div className="producto-info">
-        <div>
-          <p className="producto-nombre">{props.nombre}</p>
-          <p>{props.rangoprecio}</p>
+      <div className="producto-item" onClick={() => setVisualizar(true)}>
+        <div className="producto-info">
+        <p className="producto-nombre">{props.nombre}</p>
+        <p>{props.rangoprecio}</p>
         </div>
-        <img src={iAgrandar} alt="buscar yeniaArt" className="producto-ver" onClick={() => setVisualizar(true)}/>
+        <img src={props.img} alt={props.imginfo} className="producto-foto"/>
       </div>
     </div>
   );

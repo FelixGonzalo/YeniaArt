@@ -5,13 +5,18 @@ import QueOfrecemos from '../components/sections/QueOfrecemos'
 import Ubicanos from '../components/sections/Ubicanos'
 
 const Inicio = () => {
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
-    <div>
+    <main>
       <Portada/>
       <QueOfrecemos/>
       <FlujoPedido/>
       <Ubicanos/>
-    </div>
+    </main>
   )
 }
 

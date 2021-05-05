@@ -1,0 +1,60 @@
+.catalogo {
+  margin: auto;
+}
+
+.catalogo-titulo {
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Letters_for_Learners";
+  text-shadow: 1px 1px 1px rgb(131, 117, 117);
+  max-width: 250px;
+  border-bottom: 3px solid var(--ctexto1);
+}
+
+.catalogo-descripcion {
+  text-align: center;
+  font-family: "Letters_for_Learners", sans-serif;
+  font-size: 25px;
+}
+
+.catalogo-productos {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 5px 0px 5px;
+  border-radius: 3px;
+  gap: 5px;
+  padding: 0 5px;
+  max-width: 1400px;
+}
+
+.catalogo .portada {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .catalogo-productos {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .catalogo-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .catalogo .portada {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .catalogo-productos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 5px auto 20px;
+  }
+}

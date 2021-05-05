@@ -11,7 +11,7 @@
   height: 276px;
   object-fit: cover;
   box-sizing: border-box;
-  border: 2px solid var(--cGris2);
+  border: 2px solid #817f7f;
   border-radius: 10px;
   position: relative;
 }
@@ -21,7 +21,7 @@
   width: 25%;
   height: 25%;
   object-fit: cover;
-  border: 2px solid var(--cGris2);
+  border: 2px solid #817f7f;
   border-radius: 0px 10px 0px 10px;
   position: absolute;
   z-index: 1;
@@ -65,7 +65,7 @@
   width: 45%;
   text-align: right;
   font-size: 15px;
-  color: var(--cGris);
+  color: #242424;
 }
 
 @media (min-width: 600px) {
