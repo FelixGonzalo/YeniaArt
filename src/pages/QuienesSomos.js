@@ -1,12 +1,8 @@
 import React from 'react'
-import iArte from '../img/icon/arte.svg'
-import iCalidad from '../img/icon/calidad.svg'
-import iTransparencia from '../img/icon/transparencia.svg'
-import iMision from '../img/icon/mision.svg'
-import iVision from '../img/icon/vision.svg'
-import Valor from '../components/cards/Valor'
 import './quienessomos.css'
 import Portada from '../components/Portadas/Portada'
+import Valor from '../components/cards/Valor'
+
 
 const QuienesSomos = () => {
 
@@ -22,17 +18,17 @@ const QuienesSomos = () => {
       <div className="quienessomos-valores">
         <Valor
           nombre="Arte"
-          img={iArte}
+          img='arte.svg'
           descripcion="Amor y pasión en nuestro trabajo"
         />
         <Valor
           nombre="Calidad"
-          img={iCalidad}
+          img='calidad.svg'
           descripcion="En buen estado y al precio justo"
         />
         <Valor
           nombre="Transparencia"
-          img={iTransparencia}
+          img='transparencia.svg'
           descripcion="Trabajo honesto y responsable"
         />
       </div>
@@ -40,13 +36,13 @@ const QuienesSomos = () => {
         <div className="mision">
           <p className="mision-nombre">Misión</p>
           <p className="mision-descripcion">Ofrecer a nuestros clientes regalos de calidad que pueden personalizar para todo tipo de evento.</p>
-          <img src={iMision} alt=""/>
+          <img src={window.location.origin + '/iconos/mision.svg'} alt=""/>
         </div>
 
         <div className="mision">
           <p className="mision-nombre">Visión</p>
           <p className="mision-descripcion">En el 2022 ser una empresa lider en la venta de regalos en la provincia del Santa ofreciendo una amplia gama de productos de calidad.</p>
-          <img src={iVision} alt=""/>
+          <img src={window.location.origin + '/iconos/vision.svg'} alt=""/>
         </div>
       </div>
     </main>

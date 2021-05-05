@@ -1,8 +1,6 @@
 import './header.css'
-import marca from '../../img/marca.png'
 import MenuFullScreen from "../menus/MenuFullScreen"
 import {NavLink} from "react-router-dom"
-import iWhatsapp from '../../img/icon/icon_whatsapp.svg'
 
 const Header = () => {
 
@@ -15,7 +13,7 @@ const Header = () => {
     <div>
       <header className="header">
         <div className="header-negocio">
-          <img src={marca} alt="yeniaart" className="header-marca"/>
+          <img src={window.location.origin + '/imagenes/marca.png'} alt="yeniaart" className="header-marca"/>
           <h1>YeniaArt</h1>
           <NavLink to="/" exact className="header-option" activeClassName="header-activate">
             Inicio
@@ -30,7 +28,7 @@ const Header = () => {
         <div className="header-opciones">
           <a href="https://api.whatsapp.com/send?phone=51957498221" target="_blank" rel="noreferrer" className="header-redsocial">
             <span className="header-celular">957498221</span>
-            <img src={iWhatsapp} alt=""/>
+            <img src={window.location.origin + '/iconos/icon_whatsapp.svg'} alt=""/>
           </a>
           <span className="menuFullScreen-abrir" onClick={(e) => activarMenu(e)}>menu</span>
         </div>

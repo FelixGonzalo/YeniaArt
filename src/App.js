@@ -1,10 +1,11 @@
 import Routes from './Routes';
+import ProductosProvider from './context/ProductosProvider'
 
 function App() {
   return (
-    <div>
+    <ProductosProvider>
       <Routes/>
-    </div>
+    </ProductosProvider>
   );
 }
 

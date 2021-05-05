@@ -1,10 +1,5 @@
 import './queofrecemos.css'
 import Carrusel3D from '../sliders/Carrusel3D'
-import slider3d1 from '../../img/slider3d1.jpg'
-import slider3d2 from '../../img/slider3d2.jpg'
-import slider3d3 from '../../img/slider3d3.jpg'
-import slider3d4 from '../../img/slider3d4.jpg'
-import slider3d5 from '../../img/slider3d5.jpg'
 
 const QueOfrecemos = () => {
   return (
@@ -29,23 +24,23 @@ const QueOfrecemos = () => {
           fotos={[
               {
                 id: 'slider3d1',
-                img: slider3d1
+                img: 'paqueteregalo4.jpg'
               },
               {
                 id: 'slider3d2',
-                img: slider3d2
+                img: 'caja2.jpg'
               },
               {
                 id: 'slider3d3',
-                img: slider3d3
+                img: 'paqueteregalo2.jpg'
               },
               {
                 id: 'slider3d4',
-                img: slider3d4
+                img: 'marco3.jpg'
               },
               {
                 id: 'slider3d5',
-                img: slider3d5
+                img: 'paqueteregalo3.jpg'
               }
             ]}
           />

@@ -1,6 +1,5 @@
 import React from 'react'
 import './producto.css'
-import iAgrandar from '../../img/icon/agrandar.svg'
 import ProductoModal from './ProductoModal'
 
 const Producto = (props) => {
@@ -23,7 +22,8 @@ const Producto = (props) => {
       <div className="producto-item" onClick={() => setVisualizar(true)}>
         <div className="producto-info">
         <p className="producto-nombre">{props.nombre}</p>
-        <p>{props.rangoprecio}</p>
+        <p className="producto-rangoprecio">{props.rangoprecio}</p>
+        <p className="producto-descripcion">{props.descripcion}</p>
         </div>
         <img src={props.img} alt={props.imginfo} className="producto-foto"/>
       </div>

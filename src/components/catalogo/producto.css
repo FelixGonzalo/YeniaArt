@@ -1,8 +1,7 @@
 .producto-item {
   box-sizing: border-box;
   width: 100%;
-  min-height: 210px;
-  max-height: 350px;
+  height: 240px;
   background: var(--cfondo4);
   padding: 10px;
   border-radius: 1px;
@@ -22,6 +21,7 @@
 .producto-foto {
   box-sizing: border-box;
   width: 60%;
+  min-width: 60%;
   height: 220px;
   object-fit: cover;
   border-radius: 3px;
@@ -43,10 +43,25 @@
   font-weight: bold;
 }
 
-.producto-ver {
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
-  border: 2px solid #242424;
-  cursor: pointer;
+.producto-rangoprecio {
+  background: var(--cbtn);
+  display: inline-block;
+  padding: 3px 6px;
+  color: var(--ctexto2);
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.producto-descripcion {
+  font-size: 19px;
+}
+
+@media (min-width: 1000px) {
+  .producto-rangoprecio {
+    font-size: 20px;
+  }
+
+  .producto-descripcion {
+    font-size: 21px;
+  }
 }

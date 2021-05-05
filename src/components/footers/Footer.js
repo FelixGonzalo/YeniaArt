@@ -1,7 +1,5 @@
 import './footer.css'
 import {Link} from "react-router-dom"
-import iWhatsapp from '../../img/icon/icon_whatsapp.svg'
-import iFacebook from '../../img/icon/icon_facebook.svg'
 
 const Footer = () => {
   return (
@@ -37,11 +35,12 @@ const Footer = () => {
       <div className="footer-bottom">
         <p><span>©</span> Todos los derechos reservados 2021</p>
         <div>
+          {/* https://api.whatsapp.com/send?phone=+51920050296&text=hola%20hola */}
           <a href="https://api.whatsapp.com/send?phone=51957498221" target="_blank" rel="noreferrer">
-            <img src={iWhatsapp} alt=""/>
+            <img src={window.location.origin + '/iconos/icon_whatsapp.svg'} alt=""/>
           </a>
           <a href="https://www.facebook.com/YeniaArt/" target="_blank" rel="noreferrer">
-            <img src={iFacebook} alt=""/>
+            <img src={window.location.origin + '/iconos/icon_facebook.svg'} alt=""/>
           </a>
         </div>
       </div>

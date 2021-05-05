@@ -1,25 +1,21 @@
 import {Link} from "react-router-dom"
 import './portada.css'
-import imgslider1 from '../../img/slider3d1.jpg'
-import imgslider2 from '../../img/slider3d2.jpg'
-import imgslider3 from '../../img/slider3d3.jpg'
-import imgPortada from '../../img/portada.jpg'
 import React from "react"
 
-const Portada = (props) => {
+const Portada = () => {
 
-  const [slider1, setSlider1] = React.useState(imgslider1);
+  const [slider1, setSlider1] = React.useState('paqueteregalo2.jpg');
 
   React.useEffect(() => {
     let cont = 0;
     const intervaloPortadaAutomatica = setInterval(function() {
       cont++;
       if (cont === 1) {
-        setSlider1(imgslider1)
+        setSlider1('paqueteregalo2.jpg')
       } else if(cont === 2){
-        setSlider1(imgslider2)
+        setSlider1('caja2.jpg')
       } else if(cont === 3) {
-        setSlider1(imgslider3)
+        setSlider1('paqueteregalo3.jpg')
       }
       if (cont > 3) {
         cont = 0
@@ -42,11 +38,11 @@ const Portada = (props) => {
             Ver catálogo
             </Link> 
           </div>
-          <img src={imgPortada} alt="producto especial"/>
+          <img src={window.location.origin + '/imagenes/productos/marco2.jpg'} alt="producto especial"/>
         </div>    
       </div>
       <div className="portada-right">
-        <img src={slider1} alt="frase de yeniart" className="portada-fotoslider"/>
+        <img src={window.location.origin + '/imagenes/productos/' + slider1} alt="frase de yeniart" className="portada-fotoslider"/>
       </div>
     </div>
   );

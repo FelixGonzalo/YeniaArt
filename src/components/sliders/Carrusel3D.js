@@ -11,7 +11,7 @@ const Carrusel3D = (props) => {
       {
         props.fotos.map((item, index) => (
           <label key={index} htmlFor={"radio" + (index+1)} id={item.id}>
-            <img src={item.img} alt=""/>
+            <img src={window.location.origin + '/imagenes/productos/'+ item.img} alt=""/>
           </label>
         ))
       }
