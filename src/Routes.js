@@ -13,7 +13,7 @@ const Routes = () => {
 
   return (
     <Fragment>
-      <Router>
+      <Router basename="/YeniaArt">
         <Header/>
         <Switch>
           <Route path="/quienessomos">
