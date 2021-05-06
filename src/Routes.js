@@ -28,7 +28,7 @@ const Routes = () => {
           <Route path="/catalogo">
             <Catalogo/>
           </Route>
-          <Route path="/" exact>
+          <Route path="/">
             <Inicio/>
           </Route>
         </Switch>
