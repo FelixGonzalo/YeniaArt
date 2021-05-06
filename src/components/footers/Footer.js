@@ -1,7 +1,10 @@
+import React from 'react'
 import './footer.css'
 import {Link} from "react-router-dom"
+import {ImagesContext} from '../../context/ImagesProvider'
 
 const Footer = () => {
+  const {urlicon} = React.useContext(ImagesContext)
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -38,10 +41,10 @@ const Footer = () => {
           <div>
             {/* https://api.whatsapp.com/send?phone=+51920050296&text=hola%20hola */}
             <a href="https://api.whatsapp.com/send?phone=51957498221" target="_blank" rel="noreferrer">
-              <img src={window.location.origin + '/iconos/icon_whatsapp.svg'} alt=""/>
+              <img src={urlicon + 'icon_whatsapp.svg'} alt=""/>
             </a>
             <a href="https://www.facebook.com/YeniaArt/" target="_blank" rel="noreferrer">
-              <img src={window.location.origin + '/iconos/icon_facebook.svg'} alt=""/>
+              <img src={urlicon + 'icon_facebook.svg'} alt=""/>
             </a>
           </div>
         </div>

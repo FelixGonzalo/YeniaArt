@@ -1,8 +1,10 @@
 import React from 'react'
 import './categoriaItem.css'
 import {withRouter} from 'react-router-dom'
+import {ImagesContext} from '../../context/ImagesProvider'
 
 const CategoriaItem = (props) => {
+  const {urlproductos} = React.useContext(ImagesContext)
 
   return (
     <div className="categoriaItem">
@@ -12,7 +14,7 @@ const CategoriaItem = (props) => {
         <p className="categoriaItem-rangoprecio">{props.rangoprecio}</p>
         <p className="categoriaItem-descripcion">{props.descripcion}</p>
         </div>
-        <img src={props.img} alt={props.imginfo} className="categoriaItem-foto"/>
+        <img src={urlproductos + props.img} alt={props.imginfo} className="categoriaItem-foto"/>
       </div>
     </div>
   );

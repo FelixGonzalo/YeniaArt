@@ -5,10 +5,12 @@ import { useParams } from 'react-router'
 import { nanoid } from 'nanoid'
 
 import {ProductosContext} from '../context/ProductosProvider'
+import {ImagesContext} from '../context/ImagesProvider'
 
 const Categoria = (props) => {
 
   const {getCategoria} = React.useContext(ProductosContext)
+  const {urlproductos, urlicon} = React.useContext(ImagesContext)
 
   const [categoriaActual, setCategoriaActual] = React.useState('')
 
@@ -41,7 +43,7 @@ const Categoria = (props) => {
             categoriaActual.items.map((producto) => (
               <img
                 key= {nanoid()}
-                src={window.location.origin + '/imagenes/productos/' + producto.img} 
+                src={urlproductos + producto.img} 
                 alt="" 
                 className="categoria-item-img"
                 onClick={() => props.history.push('/catalogo/' + categoria + '/' + producto.img.split('.')[0])}
@@ -52,10 +54,10 @@ const Categoria = (props) => {
       </div>
       <div className="catalogo-menu">
         <a href={"https://api.whatsapp.com/send?phone=51957498221&text=Hola, quisiera realizar un pedido de " + categoria} target="_blank" rel="noreferrer">
-          <img src={window.location.origin + '/iconos/icon_whatsapp.svg'} alt=""/>
+          <img src={urlicon + 'icon_whatsapp.svg'} alt=""/>
         </a>
         <button className="catalogo-menu-categorias" onClick={() => props.history.push('/catalogo')}>
-          <img src={window.location.origin + '/iconos/regresar.svg'} alt=""/>
+          <img src={urlicon + 'regresar.svg'} alt=""/>
         </button>
       </div>
     </main>

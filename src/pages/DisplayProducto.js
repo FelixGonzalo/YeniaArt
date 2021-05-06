@@ -5,21 +5,24 @@ import {withRouter} from 'react-router-dom'
 import { nanoid } from 'nanoid'
 
 import {ProductosContext} from '../context/ProductosProvider'
+import {ImagesContext} from '../context/ImagesProvider'
 
 const DisplayProducto = (props) => {
+
   const {categoria, item} = useParams()
   const {getProducto, productosSugeridos} = React.useContext(ProductosContext)
+  const {urlproductos, urlicon} = React.useContext(ImagesContext)
   const [producto, setProducto] = React.useState(null)
-
 
   React.useEffect(() => {
     window.scrollTo(0, 0)
     setProducto(getProducto(categoria,item))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const updateProducto = async (sugerencia) => {
-    await props.history.push(`/catalogo/${sugerencia.slug}/${sugerencia.img.split('.')[0]}`)
-    await setProducto(getProducto(sugerencia.slug, sugerencia.img.split('.')[0]))
+  const updateProducto = (sugerencia) => {
+    props.history.push(`/catalogo/${sugerencia.slug}/${sugerencia.img.split('.')[0]}`)
+    setProducto(getProducto(sugerencia.slug, sugerencia.img.split('.')[0]))
     window.scrollTo(0, 0)
   }
 
@@ -33,14 +36,14 @@ const DisplayProducto = (props) => {
                 <span>Pedido por WhatsApp  👉 </span>
                 <div>
                   <a href={'https://api.whatsapp.com/send?phone=51957498221&text=Hola, quisiera realizar un pedido: ' + window.location} target="_blank" rel="noreferrer" className="displayProducto-contacto">
-                    <img src={window.location.origin + '/iconos/icon_whatsapp.svg'} alt=""/>
+                    <img src={urlicon + 'icon_whatsapp.svg'} alt=""/>
                   </a>
                   <span  className="displayProducto-contacto" onClick={() => props.history.push('/catalogo/'+categoria)}>
-                    <img src={window.location.origin + '/iconos/regresar.svg'} alt=""/>
+                    <img src={urlicon + 'regresar.svg'} alt=""/>
                   </span>
                 </div>
               </div>
-              <img src={window.location.origin + '/imagenes/productos/' + producto.img} alt="" className="displayProducto-img"/>
+              <img src={urlproductos + producto.img} alt="" className="displayProducto-img"/>
             </div> 
             <div className="displayProducto-info">
               <h2 className="displayProducto-info-nombre">{producto.nombre} <span className="displayProducto-info-precio">{producto.precio}</span></h2>
@@ -52,7 +55,7 @@ const DisplayProducto = (props) => {
                   productosSugeridos.map((sugerencia) => (
                     <img
                       key= {nanoid()}
-                      src={window.location.origin + '/imagenes/productos/' + sugerencia.img} 
+                      src={urlproductos + sugerencia.img} 
                       alt="" 
                       className="displayProducto-sugerencias-img"
                       onClick={() => updateProducto(sugerencia)}

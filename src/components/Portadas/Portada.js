@@ -1,9 +1,11 @@
 import {Link} from "react-router-dom"
 import './portada.css'
 import React from "react"
+import {ImagesContext} from '../../context/ImagesProvider'
 
 const Portada = () => {
 
+  const {urlproductos} = React.useContext(ImagesContext)
   const [slider1, setSlider1] = React.useState('paqueteregalo2.jpg');
 
   React.useEffect(() => {
@@ -38,11 +40,11 @@ const Portada = () => {
             Ver catálogo
             </Link> 
           </div>
-          <img src={window.location.origin + '/imagenes/productos/marco2.jpg'} alt="producto especial"/>
+          <img src={urlproductos + 'marco2.jpg'} alt="producto especial"/>
         </div>    
       </div>
       <div className="portada-right">
-        <img src={window.location.origin + '/imagenes/productos/' + slider1} alt="frase de yeniart" className="portada-fotoslider"/>
+        <img src={urlproductos + slider1} alt="frase de yeniart" className="portada-fotoslider"/>
       </div>
     </div>
   );

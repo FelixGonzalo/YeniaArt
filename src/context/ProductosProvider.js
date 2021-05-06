@@ -213,6 +213,9 @@ const ProductosProvider = (props) => {
       case 'marcos':
         array = categorias[5]
         break;
+      default:
+        array = []
+        break;
     }
 
     array.items.forEach((nodo) => {

@@ -1,6 +1,9 @@
+import React from 'react'
 import './ubicacion.css'
+import {ImagesContext} from '../../context/ImagesProvider'
 
 const Ubicacion = (props) => {
+  const {urltiendas} = React.useContext(ImagesContext)
   return (
     <div className="ubicacion">
      <div className="ubicacion-info">
@@ -13,7 +16,7 @@ const Ubicacion = (props) => {
           {props.info}
         </p>
       </div>
-      <img src={window.location.origin + '/imagenes/tiendas/'+props.foto} alt="ubicacion yeniaart" className="ubicacion-foto"/>
+      <img src={urltiendas+props.foto} alt="ubicacion yeniaart" className="ubicacion-foto"/>
       <iframe title="tienda amiga" className="ubicacion-mapa" src={props.googlemap}  loading="lazy"></iframe>
     </div>
   );

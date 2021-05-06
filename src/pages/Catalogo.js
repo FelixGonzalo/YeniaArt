@@ -5,9 +5,11 @@ import { nanoid } from 'nanoid'
 
 import {ProductosContext} from '../context/ProductosProvider'
 
+
 const Catalogo = () => {
 
   const {categorias} = React.useContext(ProductosContext)
+
 
   React.useEffect(() => {
     window.scrollTo(0, 0)
@@ -22,7 +24,7 @@ const Catalogo = () => {
             <CategoriaItem
               key= {nanoid()}
               slug={categoria.slug}
-              img= {window.location.origin + '/imagenes/productos/' + categoria.img}
+              img= {categoria.img}
               imginfo= {categoria.imginfo}
               nombre= {categoria.nombre}
               rangoprecio= {categoria.rangoprecio}

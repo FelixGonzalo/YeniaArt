@@ -10,6 +10,7 @@ import Inicio from './pages/Inicio'
 import QuienesSomos from './pages/QuienesSomos'
 
 const Routes = () => {
+
   return (
     <Fragment>
       <Router>
@@ -27,7 +28,7 @@ const Routes = () => {
           <Route path="/catalogo">
             <Catalogo/>
           </Route>
-          <Route path="/">
+          <Route path="/" exact>
             <Inicio/>
           </Route>
         </Switch>
