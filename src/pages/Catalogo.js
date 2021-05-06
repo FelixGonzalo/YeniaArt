@@ -1,6 +1,5 @@
 import React from 'react'
 import './catalogo.css'
-import Portada from '../components/Portadas/Portada'
 import CategoriaItem from '../components/catalogo/CategoriaItem'
 import { nanoid } from 'nanoid'
 
@@ -16,8 +15,7 @@ const Catalogo = () => {
 
   return (
     <main className="catalogo">
-      <Portada/>
-      <h2 className="titulo catalogo-titulo">CATÁLOGO</h2>
+      <h2 className="titulo">CATÁLOGO</h2>
       <div className="catalogo-productos">
         {
           categorias.map((categoria) => (

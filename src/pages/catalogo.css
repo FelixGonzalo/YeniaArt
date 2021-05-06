@@ -2,14 +2,16 @@
   margin: auto;
 }
 
-.catalogo-titulo {
+.catalogo h2 {
   margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-family: "Letters_for_Learners";
-  text-shadow: 1px 1px 1px rgb(131, 117, 117);
-  max-width: 250px;
-  border-bottom: 3px solid var(--ctexto1);
+  padding: 20px;
+  margin: 0 auto 5px;
+  border-top: 2px solid #242424;
+  border-bottom: 2px solid #242424;
+  max-width: 1350px;
+  background: var(--cfondo7);
+  color: var(--ctexto1);
+  box-sizing: border-box;
 }
 
 .catalogo-descripcion {
@@ -26,17 +28,7 @@
   border-radius: 3px;
   gap: 5px;
   padding: 0 5px;
-  max-width: 1400px;
-}
-
-.catalogo .portada {
-  display: none;
-}
-
-@media screen and (min-width: 600px) {
-  .catalogo-productos {
-    padding: 0 20px;
-  }
+  max-width: 1350px;
 }
 
 @media screen and (min-width: 700px) {
@@ -46,15 +38,14 @@
 }
 
 @media screen and (min-width: 800px) {
-  .catalogo .portada {
-    display: flex;
+  .catalogo-productos {
+    margin: 5px auto 50px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .catalogo-productos {
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin: 5px auto 20px;
+    gap: 7px;
   }
 }

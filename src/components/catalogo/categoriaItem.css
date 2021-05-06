@@ -5,7 +5,7 @@
   background: var(--cfondo4);
   padding: 10px;
   border-radius: 1px;
-  box-shadow: 0px 0px 0px 1px #242424;
+  border: solid 2px #242424;
   font-size: 20px;
   display: flex;
   justify-content: space-between;

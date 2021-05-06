@@ -17,6 +17,12 @@ const DisplayProducto = (props) => {
     setProducto(getProducto(categoria,item))
   }, [])
 
+  const updateProducto = async (sugerencia) => {
+    await props.history.push(`/catalogo/${sugerencia.slug}/${sugerencia.img.split('.')[0]}`)
+    await setProducto(getProducto(sugerencia.slug, sugerencia.img.split('.')[0]))
+    window.scrollTo(0, 0)
+  }
+
   return (
     <main className="displayProducto">
       {
@@ -43,13 +49,13 @@ const DisplayProducto = (props) => {
               <h3 className="displayProducto-sugerencias-titulo">Te puede interesar</h3>
               <div className="displayProducto-sugerencias">
                 {
-                  productosSugeridos.map((product) => (
+                  productosSugeridos.map((sugerencia) => (
                     <img
                       key= {nanoid()}
-                      src={window.location.origin + '/imagenes/productos/' + product.img} 
+                      src={window.location.origin + '/imagenes/productos/' + sugerencia.img} 
                       alt="" 
                       className="displayProducto-sugerencias-img"
-                      onClick={() => window.location.href = `${window.location.origin}/catalogo/${product.slug}/${product.img.split('.')[0]}`}
+                      onClick={() => updateProducto(sugerencia)}
                     />
                   ))
                 }

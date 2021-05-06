@@ -1,6 +1,5 @@
 import React from 'react'
 import './quienessomos.css'
-import Portada from '../components/Portadas/Portada'
 import Valor from '../components/cards/Valor'
 
 
@@ -12,7 +11,6 @@ const QuienesSomos = () => {
 
   return (
     <main className="quienessomos"> 
-      <Portada/>
       <h2 className="titulo">¿Quiénes somos?</h2>
       <p className="quienessomos-text">YeniaArt es un tienda de regalos virtual dedicada a la creación de productos personalizados con accesorios y el arte del lettering.</p>
       <div className="quienessomos-valores">
