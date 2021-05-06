@@ -1,7 +1,7 @@
 import React from 'react'
 import './catalogo.css'
 import Portada from '../components/Portadas/Portada'
-import Producto from '../components/catalogo/Producto'
+import CategoriaItem from '../components/catalogo/CategoriaItem'
 import { nanoid } from 'nanoid'
 
 import {ProductosContext} from '../context/ProductosProvider'
@@ -21,8 +21,9 @@ const Catalogo = () => {
       <div className="catalogo-productos">
         {
           categorias.map((categoria) => (
-            <Producto
+            <CategoriaItem
               key= {nanoid()}
+              slug={categoria.slug}
               img= {window.location.origin + '/imagenes/productos/' + categoria.img}
               imginfo= {categoria.imginfo}
               nombre= {categoria.nombre}

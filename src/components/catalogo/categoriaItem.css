@@ -1,11 +1,11 @@
-.producto-item {
+.categoriaItem-item {
   box-sizing: border-box;
   width: 100%;
   height: 240px;
   background: var(--cfondo4);
   padding: 10px;
   border-radius: 1px;
-  box-shadow: 0px 0px 0px 0.5px #242424;
+  box-shadow: 0px 0px 0px 1px #242424;
   font-size: 20px;
   display: flex;
   justify-content: space-between;
@@ -13,12 +13,12 @@
   gap: 5px;
 }
 
-.producto-item:hover {
+.categoriaItem-item:hover {
   background: var(--cfondo2);
   cursor: pointer;
 }
 
-.producto-foto {
+.categoriaItem-foto {
   box-sizing: border-box;
   width: 60%;
   min-width: 60%;
@@ -29,21 +29,21 @@
   cursor: pointer;
 }
 
-.producto p {
+.categoriaItem p {
   margin: 2px 0px;
   font-family: "Letters_for_Learners", sans-serif;
 }
 
-.producto-info {
+.categoriaItem-info {
   padding: 5px;
 }
 
-.producto-nombre {
+.categoriaItem-nombre {
   font-size: 30px;
   font-weight: bold;
 }
 
-.producto-rangoprecio {
+.categoriaItem-rangoprecio {
   background: var(--cbtn);
   display: inline-block;
   padding: 3px 6px;
@@ -52,16 +52,16 @@
   font-size: 15px;
 }
 
-.producto-descripcion {
+.categoriaItem-descripcion {
   font-size: 19px;
 }
 
 @media (min-width: 1000px) {
-  .producto-rangoprecio {
+  .categoriaItem-rangoprecio {
     font-size: 20px;
   }
 
-  .producto-descripcion {
+  .categoriaItem-descripcion {
     font-size: 21px;
   }
 }

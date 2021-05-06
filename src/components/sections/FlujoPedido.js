@@ -17,14 +17,9 @@ const FlujoPedido = () => {
         <div className="flujopedido-item">
           <img src={window.location.origin + '/iconos/chatusuarios.svg'} alt=""/>
           <p>2. Contáctanos para hacer tu pedido</p>
-          <div className="flujopedido-contactanos">
-            <a href="https://api.whatsapp.com/send?phone=51957498221" target="_blank" rel="noreferrer">
-              <img src={window.location.origin + '/iconos/icon_whatsapp.svg'} alt=""/>
-            </a>
-            <a href="https://www.facebook.com/YeniaArt/" target="_blank" rel="noreferrer">
-              <img src={window.location.origin + '/iconos/icon_facebook.svg'} alt=""/>
-            </a>
-          </div>
+          <a href="https://api.whatsapp.com/send?phone=51957498221" target="_blank" rel="noreferrer" className="flujopedido-boton">
+            Contactar ahora
+          </a>
         </div>
         <div className="flujopedido-item">
           <img src={window.location.origin + '/iconos/entrega.svg'} alt=""/>

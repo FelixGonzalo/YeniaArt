@@ -14,7 +14,7 @@ const Ubicacion = (props) => {
         </p>
       </div>
       <img src={window.location.origin + '/imagenes/tiendas/'+props.foto} alt="ubicacion yeniaart" className="ubicacion-foto"/>
-      <iframe className="ubicacion-mapa" src={props.googlemap}  loading="lazy"></iframe>
+      <iframe title="tienda amiga" className="ubicacion-mapa" src={props.googlemap}  loading="lazy"></iframe>
     </div>
   );
 }

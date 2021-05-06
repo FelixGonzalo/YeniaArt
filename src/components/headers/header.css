@@ -26,7 +26,7 @@
 
 .header-marca {
   box-sizing: border-box;
-  height: 45px;
+  height: 30px;
   border-radius: 5px;
   border: 2px solid var(--cNegro);
 }
@@ -36,9 +36,9 @@
   text-decoration: none;
   display: inline;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: 0px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Mystical_Snow", sans-serif;
   font-weight: 100;
 }
@@ -51,7 +51,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 17px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -66,11 +66,20 @@
 .header-redsocial img {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
 }
 
 .header-celular {
   display: none;
+}
+
+@media (min-width: 350px) {
+  .header h1 {
+    font-size: 25px;
+  }
+  .header-marca {
+    height: 40px;
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: 800px) {

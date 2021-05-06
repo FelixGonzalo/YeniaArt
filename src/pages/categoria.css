@@ -3,11 +3,14 @@
   box-sizing: border-box;
   max-width: 1350px;
   margin: auto;
-  padding: 0px 20px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  padding: 0px 20px 15px;
+  border-top: 2px solid #242424;
+  border-bottom: 2px solid #242424;
   background: var(--cfondo7);
   margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .categoria-boxinfo h2 {
@@ -31,6 +34,7 @@
 .categoria-boxitems {
   max-width: 1350px;
   margin: auto;
+  padding: 0 5px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: 300px;
@@ -42,7 +46,31 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  outline: 2px solid #6f6f6f;
+  outline: 2px solid #242424;
+  cursor: pointer;
+}
+
+/* Mennu flotante */
+
+.catalogo-menu {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.catalogo-menu-categorias {
+  background: var(--cbtn);
+  color: var(--ctexto2);
+  padding: 5px 10px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.catalogo-menu-categorias img {
+  filter: invert();
+  width: 25px;
 }
 
 @media screen and (min-width: 450px) {
@@ -66,6 +94,10 @@
 @media screen and (min-width: 1100px) {
   .categoria-boxitems {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .catalogo-menu {
+    bottom: 50vh;
+    right: 20px;
   }
 }
 

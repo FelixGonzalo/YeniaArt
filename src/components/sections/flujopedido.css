@@ -34,19 +34,13 @@
   border-radius: 10px;
   text-shadow: none;
   margin-top: 25px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.flujopedido-contactanos {
-  margin-top: 25px;
-}
-
-.flujopedido-contactanos img {
-  width: 29px;
-  background: var(--cfondo);
-  padding: 2px;
-  border-radius: 10px;
-  border: 3px solid var(--cbtn3);
+.flujopedido-boton:hover {
+  background: rgb(209, 81, 81);
 }
 
 .flujopedido-contactanos img:last-child {
