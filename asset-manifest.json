@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/YeniaArt/static/css/main.e24ad5bb.chunk.css",
-    "main.js": "/YeniaArt/static/js/main.f18be5cc.chunk.js",
-    "main.js.map": "/YeniaArt/static/js/main.f18be5cc.chunk.js.map",
+    "main.js": "/YeniaArt/static/js/main.5b0a3572.chunk.js",
+    "main.js.map": "/YeniaArt/static/js/main.5b0a3572.chunk.js.map",
     "runtime-main.js": "/YeniaArt/static/js/runtime-main.aa32294b.js",
     "runtime-main.js.map": "/YeniaArt/static/js/runtime-main.aa32294b.js.map",
     "static/js/2.66c2e766.chunk.js": "/YeniaArt/static/js/2.66c2e766.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.aa32294b.js",
     "static/js/2.66c2e766.chunk.js",
     "static/css/main.e24ad5bb.chunk.css",
-    "static/js/main.f18be5cc.chunk.js"
+    "static/js/main.5b0a3572.chunk.js"
   ]
 }
