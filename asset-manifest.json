@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/YeniaArt/static/css/main.e24ad5bb.chunk.css",
+    "main.js": "/YeniaArt/static/js/main.d89f9e3d.chunk.js",
+    "main.js.map": "/YeniaArt/static/js/main.d89f9e3d.chunk.js.map",
+    "runtime-main.js": "/YeniaArt/static/js/runtime-main.aa32294b.js",
+    "runtime-main.js.map": "/YeniaArt/static/js/runtime-main.aa32294b.js.map",
+    "static/js/2.fd73811d.chunk.js": "/YeniaArt/static/js/2.fd73811d.chunk.js",
+    "static/js/2.fd73811d.chunk.js.map": "/YeniaArt/static/js/2.fd73811d.chunk.js.map",
+    "index.html": "/YeniaArt/index.html",
+    "service-worker.js": "/YeniaArt/service-worker.js",
+    "service-worker.js.map": "/YeniaArt/service-worker.js.map",
+    "static/css/main.e24ad5bb.chunk.css.map": "/YeniaArt/static/css/main.e24ad5bb.chunk.css.map",
+    "static/js/2.fd73811d.chunk.js.LICENSE.txt": "/YeniaArt/static/js/2.fd73811d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/YeniaArt/static/media/Mystical_Snow.f8b9d990.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa32294b.js",
+    "static/js/2.fd73811d.chunk.js",
+    "static/css/main.e24ad5bb.chunk.css",
+    "static/js/main.d89f9e3d.chunk.js"
+  ]
+}
